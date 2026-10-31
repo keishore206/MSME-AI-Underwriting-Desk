@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"tertiary":"#005439","surface-bright":"#f9f9ff","surface-container-lowest":"#ffffff","secondary":"#4e5e85","on-secondary-fixed-variant":"#37466c","on-primary":"#ffffff","primary-container":"#1a56db","on-tertiary-container":"#7ff2be","on-primary-container":"#d4dcff","inverse-on-surface":"#ebf1ff","surface-tint":"#1353d8","primary-fixed":"#dbe1ff","outline":"#737686","on-secondary-container":"#4a5980","inverse-primary":"#b5c4ff","surface-container-high":"#e2e8f8","on-tertiary-fixed":"#002114","surface-variant":"#dce2f3","secondary-fixed":"#dae2ff","error":"#ba1a1a","on-surface-variant":"#434654","primary":"#003fb1","error-container":"#ffdad6","on-surface":"#151c27","on-primary-fixed":"#00174d","surface-container-low":"#f0f3ff","surface-container":"#e7eefe","on-secondary-fixed":"#081a3e","tertiary-fixed-dim":"#68dba9","secondary-fixed-dim":"#b6c6f3","on-tertiary":"#ffffff","on-background":"#151c27","outline-variant":"#c3c5d7","surface-container-highest":"#dce2f3","secondary-container":"#c1d1ff","on-primary-fixed-variant":"#003dab","primary-fixed-dim":"#b5c4ff","inverse-surface":"#2a313d","tertiary-fixed":"#85f8c4","tertiary-container":"#006f4d","on-secondary":"#ffffff","surface":"#f9f9ff","on-error":"#ffffff","on-error-container":"#93000a","on-tertiary-fixed-variant":"#005137","background":"#f9f9ff","surface-dim":"#d3daea"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"space-md":"1rem","space-xl":"2rem","space-xs":"0.25rem","margin":"2rem","space-lg":"1.5rem","space-sm":"0.5rem","gutter":"1.5rem"},"fontFamily":{"body-lg":["Inter"],"body-md":["Inter"],"numeric-data":["Inter"],"body-md-medium":["Inter"],"headline-lg":["Inter"],"label-sm":["Inter"],"label-md":["Inter"],"headline-md":["Inter"],"headline-lg-mobile":["Inter"],"body-sm":["Inter"],"headline-sm":["Inter"]},"fontSize":{"body-lg":["16px",{"lineHeight":"24px","letterSpacing":"0em","fontWeight":"400"}],"body-md":["14px",{"lineHeight":"20px","letterSpacing":"0em","fontWeight":"400"}],"numeric-data":["14px",{"lineHeight":"20px","letterSpacing":"-0.01em","fontWeight":"600"}],"body-md-medium":["14px",{"lineHeight":"20px","letterSpacing":"0em","fontWeight":"500"}],"headline-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"700"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.04em","fontWeight":"600"}],"label-md":["13px",{"lineHeight":"16px","letterSpacing":"0.01em","fontWeight":"600"}],"headline-md":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-lg-mobile":["24px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"700"}],"body-sm":["12px",{"lineHeight":"16px","letterSpacing":"0.01em","fontWeight":"400"}],"headline-sm":["18px",{"lineHeight":"24px","letterSpacing":"-0.005em","fontWeight":"600"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-screen w-60 bg-[#0F2044] z-50 flex flex-col justify-between text-on-primary select-none"><div class="flex flex-col flex-1 min-h-0"><div class="h-16 px-space-md flex items-center gap-space-sm border-b border-outline/20"><img alt="CreditAI Bank Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XMDy3_NnW79KjK05MGgiXAJtBNOg8BEAcj4oMQFczNXMT7eYkiqBA1BqM43zDaQ3HEZUgRctX17q1G_BoOeeLUQAbNUHLDEynabT09koRaPbI9TdVKBCOiKMWKQhTgV5xAW_7xGFUCkVUDz5LGcoQxK1znGV8F_XxL37CbpZ9jlz2vvmA8mBk0QSe8JF4f9q1-ZDXeHAVq3TY2bwp1tM6C1RmB4m09ZBe_c53oW1S9MQ"/><div class="flex flex-col min-w-0"><span class="font-headline-sm text-headline-sm text-on-primary truncate tracking-tight">AI Underwriting</span><span class="font-label-sm text-label-sm text-outline-variant uppercase tracking-wider">Desk Cockpit</span></div></div><nav class="flex-1 px-space-sm py-space-md flex flex-col gap-space-xs overflow-y-auto" data-active-classes="bg-primary-container text-on-primary font-body-md-medium shadow-sm"><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl text-outline-variant hover:bg-surface-variant/10 hover:text-on-primary transition-colors font-body-md text-body-md" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[20px]">dashboard</span><span>Dashboard</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl text-outline-variant hover:bg-surface-variant/10 hover:text-on-primary transition-colors font-body-md text-body-md" data-path="new-application" href="#"><span class="material-symbols-outlined text-[20px]">note_add</span><span>New Application</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl text-outline-variant hover:bg-surface-variant/10 hover:text-on-primary transition-colors font-body-md text-body-md" data-path="all-cases" href="#"><span class="material-symbols-outlined text-[20px]">folder_shared</span><span>All Cases</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl text-outline-variant hover:bg-surface-variant/10 hover:text-on-primary transition-colors font-body-md text-body-md" data-path="reports" href="#"><span class="material-symbols-outlined text-[20px]">analytics</span><span>Reports</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl text-outline-variant hover:bg-surface-variant/10 hover:text-on-primary transition-colors font-body-md text-body-md" data-path="settings" href="#"><span class="material-symbols-outlined text-[20px]">tune</span><span>Settings</span></a></nav></div><div class="flex flex-col border-t border-outline/20"><div class="px-space-md py-space-sm bg-[#0A1630] flex items-center justify-between"><div class="flex items-center gap-space-sm"><span class="relative flex h-2.5 w-2.5"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-tertiary-fixed opacity-75"></span><span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-tertiary-fixed-dim"></span></span><span class="font-label-md text-label-md text-surface-container-high">3 agents running</span></div><span class="font-label-sm text-label-sm text-outline-variant">Active</span></div><div class="p-space-md flex items-center gap-space-sm bg-[#0F2044]"><div class="relative"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-primary-container" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEtNig0yiCmbzikf5aSuotHs58lnESubKkqhPxDO42p5s1-UnmFrveGWroe_v8i8l6Ox0XHHR4-KI25JX2vQ4JuDB7QZVPulLmW55m8okKCDS--mQ1LzDeqrUJ-huXr-kPJ3qJ4oSHWru4h6YhlEL3WK9g4L2K_1ogo0awaE8Un-psKxjR_fNtAOOlrI5mBx5RlHvx3qxWlP4gYsfEGKyL1FaaKiAhpYs5JE3tM571"/><span class="absolute bottom-0 right-0 w-2 h-2 bg-tertiary-fixed rounded-full ring-1 ring-[#0F2044]"></span></div><div class="flex flex-col min-w-0 flex-1"><span class="font-body-md-medium text-body-md-medium text-on-primary truncate">Arun Sharma</span><span class="font-label-sm text-label-sm text-outline-variant truncate">Senior Underwriter</span></div><span class="material-symbols-outlined text-outline-variant text-[18px]">unfold_more</span></div></div></aside><div class="pl-60"><header class="fixed top-0 left-60 right-0 h-16 bg-surface-container-lowest border-b border-outline-variant/30 z-40 flex items-center justify-between px-gutter shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-space-md min-w-0 flex-1"><nav aria-label="Breadcrumb" class="hidden sm:flex items-center gap-space-xs font-label-md text-label-md text-on-surface-variant shrink-0"><a class="hover:text-primary transition-colors text-on-surface-variant" data-path="dashboard" href="#">Home</a><span class="material-symbols-outlined text-[16px] text-outline">chevron_right</span><span class="text-on-surface font-body-md-medium">Dashboard</span></nav><div class="relative w-full max-w-md"><span class="material-symbols-outlined absolute left-space-sm top-1/2 -translate-y-1/2 text-outline text-[20px] pointer-events-none">search</span><input class="w-full h-9 pl-9 pr-space-md bg-surface-container-low text-on-surface placeholder:text-outline border border-outline-variant/40 rounded-lg font-body-sm text-body-sm focus:outline-none focus:border-primary-container focus:ring-1 focus:ring-primary-container transition-all" placeholder="Search cases, applicants, GSTIN..." type="search"/></div></div><div class="flex items-center gap-space-md shrink-0 ml-space-md"><button aria-label="Notifications" class="relative p-space-xs text-on-surface-variant hover:text-on-surface hover:bg-surface-container rounded-lg transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute -top-1 -right-1 flex h-4 min-w-[1rem] px-1 items-center justify-center rounded-full bg-error text-on-error font-label-sm text-[10px] font-bold ring-2 ring-surface-container-lowest">3</span></button><a class="inline-flex items-center justify-center gap-space-xs h-11 px-space-md bg-primary-container hover:bg-primary text-on-primary font-body-md-medium text-body-md-medium rounded-xl shadow-sm transition-colors shrink-0" data-path="new-application" href="#"><span class="material-symbols-outlined text-[18px]">add</span><span>New Application</span></a><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-outline-variant shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEtNig0yiCmbzikf5aSuotHs58lnESubKkqhPxDO42p5s1-UnmFrveGWroe_v8i8l6Ox0XHHR4-KI25JX2vQ4JuDB7QZVPulLmW55m8okKCDS--mQ1LzDeqrUJ-huXr-kPJ3qJ4oSHWru4h6YhlEL3WK9g4L2K_1ogo0awaE8Un-psKxjR_fNtAOOlrI5mBx5RlHvx3qxWlP4gYsfEGKyL1FaaKiAhpYs5JE3tM571"/></div></header><main class="relative pt-16 min-h-screen bg-background w-full px-gutter py-margin"><div class="flex flex-col w-full">
+<!-- Dynamic Styles & Keyframes for Graph Flow and Radar Pulse -->
+<style>
+    @keyframes pulseGlow {
+      0%, 100% { opacity: 0.35; transform: scale(1); }
+      50% { opacity: 0.85; transform: scale(1.12); }
+    }
+    @keyframes dashCycle {
+      to { stroke-dashoffset: -32; }
+    }
+    .flow-dash {
+      stroke-dasharray: 6 4;
+      animation: dashCycle 3.5s linear infinite;
+    }
+    .agent-pulse {
+      animation: pulseGlow 2.5s ease-in-out infinite;
+    }
+  </style>
+<!-- Section 1: Context Header & Top Control Bar -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md mb-space-lg">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs font-label-md text-label-md text-on-surface-variant">
+<span class="hover:text-primary transition-colors cursor-pointer">Cases</span>
+<span class="material-symbols-outlined text-[16px] text-outline">chevron_right</span>
+<span class="font-numeric-data text-numeric-data text-on-surface-variant">CASE-2024-00847</span>
+<span class="material-symbols-outlined text-[16px] text-outline">chevron_right</span>
+<span class="text-primary font-body-md-medium">Fraud Investigation</span>
+</div>
+<div class="flex items-center gap-space-sm mt-0.5">
+<div class="flex items-center justify-center w-8 h-8 rounded-lg bg-primary-container/10 text-primary-container">
+<span class="material-symbols-outlined text-[20px]">shield_with_heart</span>
+</div>
+<div class="flex flex-wrap items-baseline gap-space-sm">
+<h1 class="font-headline-md text-headline-md text-on-surface tracking-tight">Fraud Investigation Agent</h1>
+<span class="font-body-sm text-body-sm text-on-surface-variant">· Rajesh Textiles Pvt. Ltd. (CIN: U17110MH2012PTC229871)</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        Agent completed execution in <span class="font-numeric-data text-numeric-data text-on-surface">14.8s</span> · Cross-validated 34 counterparties, GSTN e-way logs, MCA-21, and e-Courts indices.
+      </p>
+</div>
+<!-- Right Quick Actions -->
+<div class="flex flex-wrap items-center gap-space-sm self-start lg:self-center shrink-0">
+<button class="inline-flex items-center gap-space-xs h-9 px-space-md rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-body-md-medium text-body-md transition-colors shadow-sm" id="btn-export" onclick="triggerToast('Generating encrypted tamper-evident PDF dossier...')">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">picture_as_pdf</span>
+<span>Export Report (PDF)</span>
+</button>
+<button class="inline-flex items-center gap-space-xs h-9 px-space-md rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-body-md-medium text-body-md transition-colors shadow-sm" id="btn-crawler" onclick="triggerCrawler()">
+<span class="material-symbols-outlined text-[18px] text-primary" id="crawler-icon">sync</span>
+<span>Re-run Crawler</span>
+</button>
+<button class="inline-flex items-center gap-space-xs h-9 px-space-md rounded-lg bg-tertiary-container hover:bg-tertiary text-on-tertiary font-body-md-medium text-body-md transition-colors shadow-sm" id="btn-approve-top" onclick="affixSignOff()">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+<span>Approve Fraud Clearance</span>
+</button>
+</div>
+</div>
+<!-- Operational Status Bar Badges -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm mb-space-lg flex flex-wrap items-center justify-between gap-space-md">
+<div class="flex flex-wrap items-center gap-space-sm">
+<div class="inline-flex items-center gap-2 h-7 px-3 rounded-full bg-tertiary-container/15 text-tertiary font-label-md text-label-md">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-tertiary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-tertiary"></span>
+</span>
+<span>FRAUD_CLEAR</span>
+<span class="material-symbols-outlined text-[15px]">check_circle</span>
+</div>
+<span class="inline-flex items-center gap-1 h-7 px-2.5 rounded-full bg-surface-container text-on-secondary-container font-label-md text-label-md">
+<span class="material-symbols-outlined text-[14px]">hub</span>
+        A2A: FRAUD_CLEAR
+      </span>
+<span class="inline-flex items-center gap-1 h-7 px-2.5 rounded-full bg-surface-container text-on-secondary-container font-label-md text-label-md">
+<span class="material-symbols-outlined text-[14px]">all_inclusive</span>
+        Zero Circular Loop Detected
+      </span>
+<span class="inline-flex items-center gap-1 h-7 px-2.5 rounded-full bg-primary-container/10 text-primary-container font-label-md text-label-md">
+<span class="material-symbols-outlined text-[14px]">model_training</span>
+        Model Confidence: 99.8%
+      </span>
+</div>
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-tertiary">lock</span>
+<span>Ledger Hash: <code class="font-numeric-data text-[10px] text-on-surface">sha256:7b90e...41a3</code></span>
+</div>
+</div>
+<!-- Section 3: Hero Fraud Score Gauge & Metric Breakdown Bento -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg mb-space-lg">
+<!-- Left: Radial Semi-Circular Gauge Card (5 Columns) -->
+<div class="lg:col-span-5 bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between mb-space-sm">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Underwriting Synthesis</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Composite Fraud Risk Score</h2>
+</div>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-md bg-tertiary-container/10 text-tertiary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">security</span> Tier 1 Prime
+        </span>
+</div>
+<!-- Semicircular SVG Gauge Visualization -->
+<div class="relative flex flex-col items-center justify-center my-space-sm">
+<svg class="w-64 max-w-full overflow-visible" viewbox="0 0 240 140">
+<defs>
+<lineargradient id="gaugeGradient" x1="0%" x2="100%" y1="0%" y2="0%">
+<stop offset="0%" stop-color="#006f4d"></stop>
+<stop offset="30%" stop-color="#006f4d"></stop>
+<stop offset="35%" stop-color="#d97706"></stop>
+<stop offset="60%" stop-color="#d97706"></stop>
+<stop offset="65%" stop-color="#ba1a1a"></stop>
+<stop offset="100%" stop-color="#ba1a1a"></stop>
+</lineargradient>
+<filter height="120%" id="shadowFilter" width="120%" x="-10%" y="-10%">
+<fedropshadow dx="0" dy="2" flood-opacity="0.15" stddeviation="2"></fedropshadow>
+</filter>
+</defs>
+<!-- Arc Background Path (R=90, center 120, 115) -->
+<path d="M 30 115 A 90 90 0 0 1 210 115" fill="none" stroke="#e2e8f8" stroke-linecap="round" stroke-width="16"></path>
+<!-- Arc Colored Spectrum -->
+<path d="M 30 115 A 90 90 0 0 1 210 115" fill="none" opacity="0.3" stroke="url(#gaugeGradient)" stroke-linecap="round" stroke-width="16"></path>
+<!-- Active Score Arc (Score 14/100 -> angle 14% of 180deg = 25.2deg, from 180 to 205.2 deg) -->
+<!-- Radius 90, Center 120,115. Arc length total = pi * 90 = 282.74. 14% = 39.58 -->
+<path d="M 30 115 A 90 90 0 0 1 210 115" fill="none" stroke="#006f4d" stroke-dasharray="282.74" stroke-dashoffset="243.16" stroke-linecap="round" stroke-width="16"></path>
+<!-- Cutoff Threshold Marker (At 25% = 45deg -> pos on circle) -->
+<!-- x = 120 - 90*cos(45deg) = 120 - 63.6 = 56.4, y = 115 - 90*sin(45deg) = 51.4 -->
+<circle cx="56.4" cy="51.4" fill="#434654" r="3.5"></circle>
+<line stroke="#737686" stroke-dasharray="2 2" stroke-width="1.5" x1="56.4" x2="48" y1="51.4" y2="40"></line>
+<text fill="#434654" font-family="Inter" font-size="8" font-weight="600" text-anchor="end" x="44" y="36">Cutoff: 25</text>
+<!-- Pivot Center Dot -->
+<circle cx="120" cy="115" fill="#151c27" r="8"></circle>
+<circle cx="120" cy="115" fill="#ffffff" r="4"></circle>
+<!-- Needle pointing to 14/100 (Angle = 180 - (14/100 * 180) = 154.8 deg -> radians = 2.701) -->
+<!-- tip: 120 - 75*cos(25.2deg) = 120 - 67.86 = 52.14, 115 - 75*sin(25.2deg) = 115 - 31.93 = 83.07 -->
+<line filter="url(#shadowFilter)" stroke="#151c27" stroke-linecap="round" stroke-width="3.5" x1="120" x2="52.14" y1="115" y2="83.07"></line>
+</svg>
+<!-- Center Gauge Numerical Display -->
+<div class="text-center -mt-4">
+<div class="flex items-baseline justify-center gap-1">
+<span class="font-headline-lg text-headline-lg text-on-surface font-bold">14</span>
+<span class="font-headline-sm text-headline-sm text-outline">/ 100</span>
+</div>
+<p class="font-label-md text-label-md text-tertiary uppercase tracking-wider font-semibold">
+            FRAUD SCORE — LOW RISK
+          </p>
+</div>
+</div>
+<!-- Benchmarking Safety Margin Indicator -->
+<div class="bg-surface-container-low rounded-lg p-space-sm mt-space-sm flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px] text-tertiary">verified_user</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Bank MSME Policy Cap: <strong>≤ 25</strong></span>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary bg-tertiary-container/15 px-2 py-0.5 rounded">
+          +44% Buffer Safety
+        </span>
+</div>
+</div>
+<!-- Right: 4 Granular Sub-Risk Breakdown Cards (7 Columns) -->
+<div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<!-- Sub-metric 1: Identity Risk -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Module A</span>
+<h3 class="font-body-md-medium text-body-md-medium text-on-surface">Identity &amp; KYC Risk</h3>
+</div>
+<span class="inline-flex items-center justify-center w-7 h-7 rounded-lg bg-surface-container text-tertiary">
+<span class="material-symbols-outlined text-[18px]">badge</span>
+</span>
+</div>
+<div class="my-space-sm">
+<div class="flex items-baseline justify-between mb-1">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">05 <span class="text-body-sm font-normal text-outline">/ 100</span></span>
+<span class="font-label-sm text-label-sm text-tertiary font-semibold">Pristine Match</span>
+</div>
+<div class="w-full bg-surface-container rounded-full h-1.5 overflow-hidden">
+<div class="bg-tertiary h-1.5 rounded-full" style="width: 5%"></div>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Aadhaar biometric token verified, UIDAI hash matches PAN and MCA-21 DIN records directly.
+        </p>
+</div>
+<!-- Sub-metric 2: Transaction Risk -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Module B</span>
+<h3 class="font-body-md-medium text-body-md-medium text-on-surface">Transaction Irregularity</h3>
+</div>
+<span class="inline-flex items-center justify-center w-7 h-7 rounded-lg bg-surface-container text-amber-600">
+<span class="material-symbols-outlined text-[18px]">receipt_long</span>
+</span>
+</div>
+<div class="my-space-sm">
+<div class="flex items-baseline justify-between mb-1">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">09 <span class="text-body-sm font-normal text-outline">/ 100</span></span>
+<span class="font-label-sm text-label-sm text-amber-700 font-semibold">2 Flagged &amp; Cleared</span>
+</div>
+<div class="w-full bg-surface-container rounded-full h-1.5 overflow-hidden">
+<div class="bg-amber-500 h-1.5 rounded-full" style="width: 9%"></div>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          2 seasonal cash spike anomalies isolated; documented via EPF muster roll and return credit note.
+        </p>
+</div>
+<!-- Sub-metric 3: Network Risk -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Module C</span>
+<h3 class="font-body-md-medium text-body-md-medium text-on-surface">Network Counterparty Risk</h3>
+</div>
+<span class="inline-flex items-center justify-center w-7 h-7 rounded-lg bg-surface-container text-tertiary">
+<span class="material-symbols-outlined text-[18px]">account_tree</span>
+</span>
+</div>
+<div class="my-space-sm">
+<div class="flex items-baseline justify-between mb-1">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">00 <span class="text-body-sm font-normal text-outline">/ 100</span></span>
+<span class="font-label-sm text-label-sm text-tertiary font-semibold">Zero Watchlist Links</span>
+</div>
+<div class="w-full bg-surface-container rounded-full h-1.5 overflow-hidden">
+<div class="bg-tertiary h-1.5 rounded-full" style="width: 2%"></div>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Nil exposure to shell company directories, disqualified directors (Sec 164), or high-risk pin codes.
+        </p>
+</div>
+<!-- Sub-metric 4: Circular Trading Index -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Module D</span>
+<h3 class="font-body-md-medium text-body-md-medium text-on-surface">Circular Trading Index</h3>
+</div>
+<span class="inline-flex items-center justify-center w-7 h-7 rounded-lg bg-surface-container text-tertiary">
+<span class="material-symbols-outlined text-[18px]">sync_problem</span>
+</span>
+</div>
+<div class="my-space-sm">
+<div class="flex items-baseline justify-between mb-1">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">0.00%</span>
+<span class="font-label-sm text-label-sm text-tertiary font-semibold">Zero Loop Ring</span>
+</div>
+<div class="w-full bg-surface-container rounded-full h-1.5 overflow-hidden">
+<div class="bg-tertiary h-1.5 rounded-full" style="width: 0%"></div>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Traversed 24M banking statements across 3 tier-hops. No closed-loop flowback of funds detected.
+        </p>
+</div>
+</div>
+</div>
+<!-- Section 4: Transaction Network Graph & Network Topology -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm mb-space-lg">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-sm mb-space-md">
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[20px] text-primary">bubble_chart</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Counterparty Transaction Graph &amp; Network Topology</h2>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Interactive topological clustering of 34 verified commercial counterparties across FY23-FY25 banking and GSTR-2B ledgers.
+        </p>
+</div>
+<div class="flex items-center gap-space-sm shrink-0">
+<span class="font-label-sm text-label-sm text-outline-variant bg-surface-container px-2.5 py-1 rounded">2-Hop Depth Clustered</span>
+<button class="p-1 rounded bg-surface-container hover:bg-surface-container-high text-on-surface transition-colors" onclick="resetGraphZoom()" title="Center View">
+<span class="material-symbols-outlined text-[18px]">center_focus_strong</span>
+</button>
+</div>
+</div>
+<!-- Graph Visualization SVG Canvas -->
+<div class="relative w-full bg-surface-container-low rounded-xl overflow-hidden py-4 select-none">
+<svg class="w-full h-auto max-h-[500px]" id="network-svg" viewbox="0 0 1000 480">
+<defs>
+<!-- Arrow Markers -->
+<marker id="arrow-blue" markerheight="6" markerwidth="6" orient="auto-start-reverse" refx="22" refy="5" viewbox="0 0 10 10">
+<path d="M 0 1 L 10 5 L 0 9 z" fill="#1a56db"></path>
+</marker>
+<marker id="arrow-slate" markerheight="6" markerwidth="6" orient="auto-start-reverse" refx="22" refy="5" viewbox="0 0 10 10">
+<path d="M 0 1 L 10 5 L 0 9 z" fill="#737686"></path>
+</marker>
+<marker id="arrow-amber" markerheight="6" markerwidth="6" orient="auto-start-reverse" refx="22" refy="5" viewbox="0 0 10 10">
+<path d="M 0 1 L 10 5 L 0 9 z" fill="#d97706"></path>
+</marker>
+<!-- Glow Filter for Hub -->
+<filter height="140%" id="hubGlow" width="140%" x="-20%" y="-20%">
+<fedropshadow dx="0" dy="0" flood-color="#1a56db" flood-opacity="0.35" stddeviation="6"></fedropshadow>
+</filter>
+</defs>
+<!-- Background Grid Coordinates (Discreet subtle lines) -->
+<g opacity="0.6" stroke="#e2e8f8" stroke-dasharray="4 6" stroke-width="0.75">
+<line x1="0" x2="1000" y1="120" y2="120"></line>
+<line x1="0" x2="1000" y1="240" y2="240"></line>
+<line x1="0" x2="1000" y1="360" y2="360"></line>
+<line x1="250" x2="250" y1="0" y2="480"></line>
+<line x1="500" x2="500" y1="0" y2="480"></line>
+<line x1="750" x2="750" y1="0" y2="480"></line>
+</g>
+<!-- EDGES / CONNECTOR LINES (Inflow Suppliers to Central Hub) -->
+<!-- Center Hub is at (500, 240) -->
+<!-- Suppliers (Left Side) -->
+<path class="flow-dash" d="M 170 80 Q 320 150 500 240" fill="none" marker-end="url(#arrow-slate)" stroke="#737686" stroke-width="1.8"></path>
+<path d="M 140 160 Q 300 190 500 240" fill="none" marker-end="url(#arrow-slate)" stroke="#737686" stroke-width="2.2"></path>
+<path d="M 120 250 L 500 240" fill="none" marker-end="url(#arrow-slate)" stroke="#737686" stroke-width="2.5"></path>
+<path d="M 150 340 Q 310 300 500 240" fill="none" marker-end="url(#arrow-slate)" stroke="#737686" stroke-width="1.5"></path>
+<path d="M 210 410 Q 350 340 500 240" fill="none" marker-end="url(#arrow-slate)" stroke="#737686" stroke-width="1.8"></path>
+<path d="M 260 90 Q 380 160 500 240" fill="none" marker-end="url(#arrow-slate)" stroke="#737686" stroke-width="1.5"></path>
+<path d="M 330 390 Q 420 320 500 240" fill="none" marker-end="url(#arrow-slate)" stroke="#737686" stroke-width="2.0"></path>
+<!-- Amber Flagged / Cleared Supplier Connection -->
+<path d="M 280 200 L 500 240" fill="none" marker-end="url(#arrow-amber)" stroke="#d97706" stroke-dasharray="5 3" stroke-width="2"></path>
+<!-- EDGES / CONNECTOR LINES (Outflow Central Hub to Buyers, Right Side) -->
+<path class="flow-dash" d="M 500 240 Q 660 140 820 90" fill="none" marker-end="url(#arrow-blue)" stroke="#1a56db" stroke-width="2.5"></path>
+<path d="M 500 240 Q 690 180 860 170" fill="none" marker-end="url(#arrow-blue)" stroke="#1a56db" stroke-width="2.2"></path>
+<path d="M 500 240 L 880 260" fill="none" marker-end="url(#arrow-blue)" stroke="#1a56db" stroke-width="3.0"></path>
+<path d="M 500 240 Q 690 310 830 350" fill="none" marker-end="url(#arrow-blue)" stroke="#1a56db" stroke-width="2.0"></path>
+<path d="M 500 240 Q 660 380 770 420" fill="none" marker-end="url(#arrow-blue)" stroke="#1a56db" stroke-width="1.8"></path>
+<path d="M 500 240 Q 620 130 710 80" fill="none" marker-end="url(#arrow-blue)" stroke="#1a56db" stroke-width="1.5"></path>
+<!-- Amber Flagged Secondary Reconciled Node Connection -->
+<path d="M 500 240 L 690 310" fill="none" marker-end="url(#arrow-amber)" stroke="#d97706" stroke-dasharray="5 3" stroke-width="2"></path>
+<!-- SUPPLIER NODES (Gray Slate - Left) -->
+<g class="cursor-pointer" onclick="showNodeDetail('Gujarat Spun Mills', 'Raw Cotton Yarn', '₹1.84 Cr / yr', 'Clear')">
+<circle cx="170" cy="80" fill="#ffffff" r="14" stroke="#737686" stroke-width="2.5"></circle>
+<text fill="#434654" font-family="Inter" font-size="9" font-weight="700" text-anchor="middle" x="170" y="84">S1</text>
+<text fill="#434654" font-family="Inter" font-size="10" font-weight="500" text-anchor="middle" x="170" y="104">Gujarat Spun Mills</text>
+</g>
+<g class="cursor-pointer" onclick="showNodeDetail('Surat Yarn Hub', 'Synthetic Blends', '₹92 Lakh / yr', 'Clear')">
+<circle cx="140" cy="160" fill="#ffffff" r="14" stroke="#737686" stroke-width="2.5"></circle>
+<text fill="#434654" font-family="Inter" font-size="9" font-weight="700" text-anchor="middle" x="140" y="164">S2</text>
+<text fill="#434654" font-family="Inter" font-size="10" font-weight="500" text-anchor="middle" x="140" y="184">Surat Yarn Hub</text>
+</g>
+<g class="cursor-pointer" onclick="showNodeDetail('Vardhman Poly', 'Viscose &amp; Spun Fibers', '₹2.10 Cr / yr', 'Clear')">
+<circle cx="120" cy="250" fill="#ffffff" r="16" stroke="#737686" stroke-width="2.5"></circle>
+<text fill="#434654" font-family="Inter" font-size="9" font-weight="700" text-anchor="middle" x="120" y="254">S3</text>
+<text fill="#151c27" font-family="Inter" font-size="10" font-weight="600" text-anchor="middle" x="120" y="276">Vardhman Polytex</text>
+</g>
+<g class="cursor-pointer" onclick="showNodeDetail('Bhiwandi Sizing Works', 'Sizing Chemicals', '₹45 Lakh / yr', 'Clear')">
+<circle cx="150" cy="340" fill="#ffffff" r="13" stroke="#737686" stroke-width="2"></circle>
+<text fill="#434654" font-family="Inter" font-size="9" font-weight="700" text-anchor="middle" x="150" y="344">S4</text>
+<text fill="#434654" font-family="Inter" font-size="10" font-weight="500" text-anchor="middle" x="150" y="362">Bhiwandi Sizing</text>
+</g>
+<g class="cursor-pointer" onclick="showNodeDetail('Mahalaxmi Dyes &amp; Chem', 'Reactive Textile Dyes', '₹38 Lakh / yr', 'Clear')">
+<circle cx="210" cy="410" fill="#ffffff" r="13" stroke="#737686" stroke-width="2"></circle>
+<text fill="#434654" font-family="Inter" font-size="9" font-weight="700" text-anchor="middle" x="210" y="414">S5</text>
+<text fill="#434654" font-family="Inter" font-size="10" font-weight="500" text-anchor="middle" x="210" y="432">Mahalaxmi Chem</text>
+</g>
+<g class="cursor-pointer" onclick="showNodeDetail('Nahar Spinning Corp', 'Carded Cotton 40s', '₹76 Lakh / yr', 'Clear')">
+<circle cx="260" cy="90" fill="#ffffff" r="13" stroke="#737686" stroke-width="2"></circle>
+<text fill="#434654" font-family="Inter" font-size="9" font-weight="700" text-anchor="middle" x="260" y="94">S6</text>
+<text fill="#434654" font-family="Inter" font-size="10" font-weight="500" text-anchor="middle" x="260" y="112">Nahar Spinning</text>
+</g>
+<g class="cursor-pointer" onclick="showNodeDetail('Apex Packaging LLP', 'Cartons &amp; Strapping', '₹22 Lakh / yr', 'Clear')">
+<circle cx="330" cy="390" fill="#ffffff" r="12" stroke="#737686" stroke-width="2"></circle>
+<text fill="#434654" font-family="Inter" font-size="8" font-weight="700" text-anchor="middle" x="330" y="394">S7</text>
+<text fill="#434654" font-family="Inter" font-size="10" font-weight="500" text-anchor="middle" x="330" y="410">Apex Packaging</text>
+</g>
+<!-- RECONCILED AMBER NODE 1 (Supplier anomaly cleared) -->
+<g class="cursor-pointer" onclick="showNodeDetail('M/s Prakash Trading Co.', 'Anomalous advance refund ₹1.8L', '₹35 Lakh / yr', 'Cleared via Credit Note #CN-884')">
+<circle cx="280" cy="200" fill="#fffbeb" r="16" stroke="#d97706" stroke-width="2.5"></circle>
+<circle cx="280" cy="200" fill="none" opacity="0.8" r="22" stroke="#d97706" stroke-dasharray="3 3" stroke-width="1"></circle>
+<text fill="#92400e" font-family="Inter" font-size="9" font-weight="700" text-anchor="middle" x="280" y="204">⚠️</text>
+<text fill="#92400e" font-family="Inter" font-size="10" font-weight="600" text-anchor="middle" x="280" y="228">Prakash Trading</text>
+<text fill="#006f4d" font-family="Inter" font-size="8.5" font-weight="500" text-anchor="middle" x="280" y="240">[Reconciled ✓]</text>
+</g>
+<!-- RECONCILED AMBER NODE 2 (Secondary flagged counterparty cleared) -->
+<g class="cursor-pointer" onclick="showNodeDetail('Shree Ganesh Synthetics', 'Pre-monsoon wage disbursement agency', '₹68 Lakh / yr', 'Cleared via EPF Challan')">
+<circle cx="690" cy="310" fill="#fffbeb" r="15" stroke="#d97706" stroke-width="2.5"></circle>
+<circle cx="690" cy="310" fill="none" opacity="0.8" r="21" stroke="#d97706" stroke-dasharray="3 3" stroke-width="1"></circle>
+<text fill="#92400e" font-family="Inter" font-size="9" font-weight="700" text-anchor="middle" x="690" y="314">⚠️</text>
+<text fill="#92400e" font-family="Inter" font-size="10" font-weight="600" text-anchor="middle" x="690" y="336">Shree Ganesh Syn.</text>
+<text fill="#006f4d" font-family="Inter" font-size="8.5" font-weight="500" text-anchor="middle" x="690" y="348">[Reconciled ✓]</text>
+</g>
+<!-- BUYER NODES (Royal Blue - Right) -->
+<g class="cursor-pointer" onclick="showNodeDetail('Arvind Apparels Ltd.', 'Institutional Tier 1 Offtaker', '₹3.40 Cr / yr', 'Verified Tier-1 Prime')">
+<circle cx="820" cy="90" fill="#ffffff" r="16" stroke="#1a56db" stroke-width="2.5"></circle>
+<text fill="#1a56db" font-family="Inter" font-size="9" font-weight="700" text-anchor="middle" x="820" y="94">B1</text>
+<text fill="#151c27" font-family="Inter" font-size="10" font-weight="600" text-anchor="middle" x="820" y="114">Arvind Apparels</text>
+</g>
+<g class="cursor-pointer" onclick="showNodeDetail('FabIndia Distribution', 'Retail Ready Weave Buyer', '₹1.95 Cr / yr', 'Verified Retail Anchor')">
+<circle cx="860" cy="170" fill="#ffffff" r="15" stroke="#1a56db" stroke-width="2.5"></circle>
+<text fill="#1a56db" font-family="Inter" font-size="9" font-weight="700" text-anchor="middle" x="860" y="174">B2</text>
+<text fill="#151c27" font-family="Inter" font-size="10" font-weight="500" text-anchor="middle" x="860" y="194">FabIndia Dist.</text>
+</g>
+<g class="cursor-pointer" onclick="showNodeDetail('Reliance Retail Vendor Ops', 'Bulk Cotton Shirting Contracts', '₹4.80 Cr / yr', 'Verified Bluechip')">
+<circle cx="880" cy="260" fill="#ffffff" r="17" stroke="#1a56db" stroke-width="3"></circle>
+<text fill="#1a56db" font-family="Inter" font-size="9" font-weight="700" text-anchor="middle" x="880" y="264">B3</text>
+<text fill="#151c27" font-family="Inter" font-size="10" font-weight="700" text-anchor="middle" x="880" y="286">Reliance Retail</text>
+</g>
+<g class="cursor-pointer" onclick="showNodeDetail('Bombay Rayon Fashions', 'Garment Export Fabrics', '₹1.15 Cr / yr', 'Verified Active')">
+<circle cx="830" cy="350" fill="#ffffff" r="14" stroke="#1a56db" stroke-width="2"></circle>
+<text fill="#1a56db" font-family="Inter" font-size="9" font-weight="700" text-anchor="middle" x="830" y="354">B4</text>
+<text fill="#151c27" font-family="Inter" font-size="10" font-weight="500" text-anchor="middle" x="830" y="372">Bombay Rayon</text>
+</g>
+<g class="cursor-pointer" onclick="showNodeDetail('Raymond Offtake Hub', 'Worsted Blend Textiles', '₹1.60 Cr / yr', 'Verified Tier-1')">
+<circle cx="770" cy="420" fill="#ffffff" r="14" stroke="#1a56db" stroke-width="2"></circle>
+<text fill="#1a56db" font-family="Inter" font-size="9" font-weight="700" text-anchor="middle" x="770" y="424">B5</text>
+<text fill="#151c27" font-family="Inter" font-size="10" font-weight="500" text-anchor="middle" x="770" y="442">Raymond Offtake</text>
+</g>
+<g class="cursor-pointer" onclick="showNodeDetail('Zodiac Clothing Vendor', 'Yarn Dyed Shirting', '₹70 Lakh / yr', 'Verified Active')">
+<circle cx="710" cy="80" fill="#ffffff" r="13" stroke="#1a56db" stroke-width="2"></circle>
+<text fill="#1a56db" font-family="Inter" font-size="9" font-weight="700" text-anchor="middle" x="710" y="84">B6</text>
+<text fill="#151c27" font-family="Inter" font-size="10" font-weight="500" text-anchor="middle" x="710" y="100">Zodiac Clothing</text>
+</g>
+<!-- CENTRAL HUB NODE: Rajesh Textiles Pvt. Ltd. -->
+<g class="cursor-pointer agent-pulse">
+<circle cx="500" cy="240" fill="#1a56db" opacity="0.15" r="42"></circle>
+</g>
+<g class="cursor-pointer" onclick="showNodeDetail('Rajesh Textiles Pvt. Ltd.', 'Applicant Commercial Entity', 'Turnover: ₹14.82 Cr', 'Status: Primary Borrower / Clear')">
+<circle cx="500" cy="240" fill="#003fb1" filter="url(#hubGlow)" r="32"></circle>
+<circle cx="500" cy="240" fill="#1a56db" r="28"></circle>
+<!-- Building / Factory Icon -->
+<path d="M 492 232 L 500 225 L 508 232 L 508 248 L 492 248 Z" fill="#ffffff" opacity="0.9"></path>
+<rect fill="#1a56db" height="8" width="6" x="497" y="240"></rect>
+<text fill="#151c27" font-family="Inter" font-size="12" font-weight="700" text-anchor="middle" x="500" y="286">Rajesh Textiles Pvt. Ltd.</text>
+<text fill="#006f4d" font-family="Inter" font-size="9.5" font-weight="600" text-anchor="middle" x="500" y="299">BORROWER HUB · CIN-MH2012</text>
+</g>
+</svg>
+</div>
+<!-- Graph Interactive Inspector Tray / Node Popup -->
+<div class="mt-space-sm p-space-sm bg-surface-container-low rounded-lg flex flex-wrap items-center justify-between gap-space-sm" id="node-inspector">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[18px] text-primary" id="insp-icon">info</span>
+<div>
+<span class="font-body-md-medium text-body-md-medium text-on-surface" id="insp-title">Node Selected: Rajesh Textiles Pvt. Ltd. (Borrower Hub)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant ml-2" id="insp-detail">Type: Applicant Commercial Entity · Volume: ₹14.82 Cr Turnover · Status: FRAUD_CLEAR</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-outline">Click any node to inspect GSTR-2B inward/outward match</span>
+</div>
+<!-- Graph Legend Row -->
+<div class="flex flex-wrap items-center justify-between gap-space-md mt-space-md pt-space-sm border-t border-outline-variant/30">
+<div class="flex flex-wrap items-center gap-space-md">
+<div class="flex items-center gap-2">
+<span class="w-3.5 h-3.5 rounded-full bg-surface-container-lowest border-2 border-primary-container inline-block"></span>
+<span class="font-label-md text-label-md text-on-surface">Verified Wholesale Buyers (6)</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-3.5 h-3.5 rounded-full bg-surface-container-lowest border-2 border-outline inline-block"></span>
+<span class="font-label-md text-label-md text-on-surface">Raw Material Suppliers (8)</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-3.5 h-3.5 rounded-full bg-[#FFFBEB] border-2 border-amber-600 inline-block"></span>
+<span class="font-label-md text-label-md text-on-surface">Investigated &amp; Reconciled (2)</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-3.5 h-3.5 rounded-full bg-error-container border-2 border-error inline-block"></span>
+<span class="font-label-md text-label-md text-on-surface">Shell / High Risk (0 Detected)</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">verified</span> 100% Tax Invoice Triangulated
+      </span>
+</div>
+<!-- Graph Telemetry Strip -->
+<div class="grid grid-cols-2 md:grid-cols-5 gap-space-sm mt-space-md bg-surface-container-low p-space-sm rounded-lg text-center">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Counterparties</span>
+<span class="font-numeric-data text-numeric-data text-on-surface">34 Unique</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Shell Match</span>
+<span class="font-numeric-data text-numeric-data text-tertiary">0 Entities (Nil)</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">MCA Disqualified</span>
+<span class="font-numeric-data text-numeric-data text-tertiary">0 Directors</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Hawala / OFAC</span>
+<span class="font-numeric-data text-numeric-data text-tertiary">0 Watchlist Hits</span>
+</div>
+<div class="flex flex-col col-span-2 md:col-span-1">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Cluster Risk</span>
+<span class="font-numeric-data text-numeric-data text-on-surface">Bhiwandi Textile (Low)</span>
+</div>
+</div>
+</div>
+<!-- Section 5: Flagged Transactions Table -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm mb-space-lg">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-xs mb-space-md">
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[20px] text-amber-600">warning_amber</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Investigated Anomalies &amp; Event Resolutions (2)</h2>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Rule-based behavioral and velocity patterns investigated by autonomous credit fraud agent.
+        </p>
+</div>
+<span class="self-start sm:self-center font-label-sm text-label-sm px-2.5 py-1 rounded bg-surface-container text-on-surface-variant">
+        Audit Log ID: FLG-2024-8849-V
+      </span>
+</div>
+<!-- High Density Analytical Table -->
+<div class="overflow-x-auto rounded-lg">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-3 px-space-md">Transaction ID</th>
+<th class="py-3 px-space-md">Value Date</th>
+<th class="py-3 px-space-md">Anomaly Type</th>
+<th class="py-3 px-space-md text-right">Amount</th>
+<th class="py-3 px-space-md text-center">Severity</th>
+<th class="py-3 px-space-md">Algorithmic Finding &amp; Underwriter Note</th>
+<th class="py-3 px-space-md text-right">Resolution</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container">
+<!-- Row 1 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-3.5 px-space-md font-numeric-data text-numeric-data text-on-surface">
+<code>TXN-2024-03-14-001</code>
+</td>
+<td class="py-3.5 px-space-md font-body-md text-body-md text-on-surface-variant whitespace-nowrap">
+              14-Mar-2024
+            </td>
+<td class="py-3.5 px-space-md font-body-md-medium text-body-md-medium text-on-surface">
+              Round-trip Flag
+            </td>
+<td class="py-3.5 px-space-md font-numeric-data text-numeric-data text-on-surface text-right whitespace-nowrap">
+              ₹1,80,000
+            </td>
+<td class="py-3.5 px-space-md text-center">
+<span class="inline-flex items-center px-2 py-0.5 rounded text-[11px] font-semibold bg-[#FFFBEB] text-[#92400E]">
+                Low Severity
+              </span>
+</td>
+<td class="py-3.5 px-space-md font-body-sm text-body-sm text-on-surface-variant max-w-md">
+              Supplier advance payment return due to defective 40s cotton yarn batch from M/s Prakash Trading Co; fully reconciled with debit note &amp; verified credit note <span class="font-numeric-data text-on-surface">#CN-884</span>.
+            </td>
+<td class="py-3.5 px-space-md text-right whitespace-nowrap">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-tertiary bg-tertiary-container/15 px-2 py-1 rounded">
+<span class="material-symbols-outlined text-[14px]">check_circle</span> Resolved / Cleared
+              </span>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-3.5 px-space-md font-numeric-data text-numeric-data text-on-surface">
+<code>TXN-2024-07-22-003</code>
+</td>
+<td class="py-3.5 px-space-md font-body-md text-body-md text-on-surface-variant whitespace-nowrap">
+              22-Jul-2024
+            </td>
+<td class="py-3.5 px-space-md font-body-md-medium text-body-md-medium text-on-surface">
+              Cash Outflow Spike
+            </td>
+<td class="py-3.5 px-space-md font-numeric-data text-numeric-data text-on-surface text-right whitespace-nowrap">
+              ₹4,20,000
+            </td>
+<td class="py-3.5 px-space-md text-center">
+<span class="inline-flex items-center px-2 py-0.5 rounded text-[11px] font-semibold bg-[#FFFBEB] text-[#92400E]">
+                Medium Severity
+              </span>
+</td>
+<td class="py-3.5 px-space-md font-body-sm text-body-sm text-on-surface-variant max-w-md">
+              Annual pre-monsoon festival bonus &amp; advance wage disbursement to 42 factory laborers; verified against statutory muster roll, biometric attendance ledger, and bank transfer EPF challan.
+            </td>
+<td class="py-3.5 px-space-md text-right whitespace-nowrap">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-tertiary bg-tertiary-container/15 px-2 py-1 rounded">
+<span class="material-symbols-outlined text-[14px]">check_circle</span> Resolved / Cleared
+              </span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Green Reassurance Banner -->
+<div class="mt-space-md bg-tertiary-container/10 p-space-md rounded-lg flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[20px] text-tertiary">task_alt</span>
+<span class="font-body-md-medium text-body-md-medium text-tertiary">
+          0 Unresolved Flags · All anomalous transaction spikes accounted for with documentary evidence.
+        </span>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary-fixed-dim bg-tertiary px-2.5 py-1 rounded text-on-tertiary">
+        Underwriter Sign-off Ready
+      </span>
+</div>
+</div>
+<!-- Section 6: Verification Results (3 Structured Audit Bento Cards) -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg mb-space-lg">
+<!-- Card 1: Identity & Statutory Verification -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[20px] text-primary">fingerprint</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Identity &amp; Statutory</h3>
+</div>
+<span class="material-symbols-outlined text-[18px] text-tertiary">verified</span>
+</div>
+<ul class="space-y-space-md">
+<li class="flex items-start justify-between gap-space-xs">
+<div>
+<p class="font-body-md-medium text-body-md-medium text-on-surface">Aadhaar-PAN Linkage</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">UIDAI token validation with CBDT</p>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary bg-tertiary-container/15 px-2 py-0.5 rounded shrink-0">
+              100% Match ✓
+            </span>
+</li>
+<li class="flex items-start justify-between gap-space-xs">
+<div>
+<p class="font-body-md-medium text-body-md-medium text-on-surface">Udyam Registration</p>
+<p class="font-numeric-data text-body-sm text-on-surface-variant">UDYAM-MH-15-0034521</p>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary bg-tertiary-container/15 px-2 py-0.5 rounded shrink-0">
+              Active ✓
+            </span>
+</li>
+<li class="flex items-start justify-between gap-space-xs">
+<div>
+<p class="font-body-md-medium text-body-md-medium text-on-surface">GSTIN Filing Status</p>
+<p class="font-numeric-data text-body-sm text-on-surface-variant">27AABCR1234M1Z5 (MH)</p>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary bg-tertiary-container/15 px-2 py-0.5 rounded shrink-0">
+              Nil Pending ✓
+            </span>
+</li>
+<li class="flex items-start justify-between gap-space-xs">
+<div>
+<p class="font-body-md-medium text-body-md-medium text-on-surface">MCA-21 Director DIN</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">DIN 08492011 (Rajesh K. Mehta)</p>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary bg-tertiary-container/15 px-2 py-0.5 rounded shrink-0">
+              0 Disqual. ✓
+            </span>
+</li>
+</ul>
+</div>
+<div class="mt-space-lg pt-space-sm border-t border-outline-variant/30 flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span>Ministry of Corporate Affairs</span>
+<span class="text-tertiary font-semibold">Active &amp; Compliant</span>
+</div>
+</div>
+<!-- Card 2: GST & Tax Pattern Analysis -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[20px] text-primary">fact_check</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">GST &amp; Tax Pattern</h3>
+</div>
+<span class="material-symbols-outlined text-[18px] text-tertiary">verified</span>
+</div>
+<ul class="space-y-space-md">
+<li class="flex items-start justify-between gap-space-xs">
+<div>
+<p class="font-body-md-medium text-body-md-medium text-on-surface">ITC Claimed vs Turnover</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Textile weaving norm (4.0% - 6.5%)</p>
+</div>
+<span class="font-numeric-data text-numeric-data text-tertiary bg-tertiary-container/15 px-2 py-0.5 rounded shrink-0">
+              4.8% (Normal) ✓
+            </span>
+</li>
+<li class="flex items-start justify-between gap-space-xs">
+<div>
+<p class="font-body-md-medium text-body-md-medium text-on-surface">GSTR-2B vs 3B Inward</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Cross-reconciliation variance</p>
+</div>
+<span class="font-numeric-data text-numeric-data text-tertiary bg-tertiary-container/15 px-2 py-0.5 rounded shrink-0">
+              99.4% Match ✓
+            </span>
+</li>
+<li class="flex items-start justify-between gap-space-xs">
+<div>
+<p class="font-body-md-medium text-body-md-medium text-on-surface">Circular Invoicing Pattern</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Fake invoice syndicate check</p>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary bg-tertiary-container/15 px-2 py-0.5 rounded shrink-0">
+              0 Hits ✓
+            </span>
+</li>
+<li class="flex items-start justify-between gap-space-xs">
+<div>
+<p class="font-body-md-medium text-body-md-medium text-on-surface">E-Way Bill Correlation</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Physical transport cross-check</p>
+</div>
+<span class="font-numeric-data text-numeric-data text-tertiary bg-tertiary-container/15 px-2 py-0.5 rounded shrink-0">
+              1,492 / 1,492 ✓
+            </span>
+</li>
+</ul>
+</div>
+<div class="mt-space-lg pt-space-sm border-t border-outline-variant/30 flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span>GSTN Autonomous Fetch</span>
+<span class="text-tertiary font-semibold">Triangulated</span>
+</div>
+</div>
+<!-- Card 3: Bureau & Watchlist Checks -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[20px] text-primary">policy</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Bureau &amp; Watchlists</h3>
+</div>
+<span class="material-symbols-outlined text-[18px] text-tertiary">verified</span>
+</div>
+<ul class="space-y-space-md">
+<li class="flex items-start justify-between gap-space-xs">
+<div>
+<p class="font-body-md-medium text-body-md-medium text-on-surface">Commercial Bureau Inquiries</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Trailing 6 months velocity</p>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary bg-tertiary-container/15 px-2 py-0.5 rounded shrink-0">
+              2 Inquiries ✓
+            </span>
+</li>
+<li class="flex items-start justify-between gap-space-xs">
+<div>
+<p class="font-body-md-medium text-body-md-medium text-on-surface">Historical Write-offs</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Suit filed / OTS history</p>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary bg-tertiary-container/15 px-2 py-0.5 rounded shrink-0">
+              Nil (0 DPD 36m) ✓
+            </span>
+</li>
+<li class="flex items-start justify-between gap-space-xs">
+<div>
+<p class="font-body-md-medium text-body-md-medium text-on-surface">RBI Wilful Defaulter List</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">CIBIL &amp; Crif Highmark watchlist</p>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary bg-tertiary-container/15 px-2 py-0.5 rounded shrink-0">
+              Clear (Negative Hit) ✓
+            </span>
+</li>
+<li class="flex items-start justify-between gap-space-xs">
+<div>
+<p class="font-body-md-medium text-body-md-medium text-on-surface">e-Courts &amp; Litigation</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Sec 138 Cheque bounce scrapers</p>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary bg-tertiary-container/15 px-2 py-0.5 rounded shrink-0">
+              0 Pending Suits ✓
+            </span>
+</li>
+</ul>
+</div>
+<div class="mt-space-lg pt-space-sm border-t border-outline-variant/30 flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span>Judicial &amp; Regulatory Scan</span>
+<span class="text-tertiary font-semibold">Nil Adverse Findings</span>
+</div>
+</div>
+</div>
+<!-- Section 7: Persistent Underwriter Sign-off & Decision Banner -->
+<div class="sticky bottom-4 z-30 bg-[#0F2044] text-on-primary p-space-md rounded-xl shadow-xl flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-tertiary-container/30 border border-tertiary-container/50 flex items-center justify-center text-tertiary-fixed shrink-0">
+<span class="material-symbols-outlined text-[24px]">verified_user</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-on-primary">Fraud Analysis Verdict: Recommended for Clearance</span>
+<span class="inline-flex items-center px-2 py-0.5 rounded bg-tertiary text-on-tertiary font-label-sm text-[10px] uppercase font-bold tracking-wide">
+            Passed Tier-1
+          </span>
+</div>
+<p class="font-body-sm text-body-sm text-outline-variant">
+          No adverse behavioral or statutory indicators impeding credit sanction. Autonomous report signed by Risk Agent #847.
+        </p>
+</div>
+</div>
+<!-- Interactive Actions in Signoff Bar -->
+<div class="flex items-center gap-space-sm shrink-0 self-end md:self-center">
+<button class="inline-flex items-center gap-space-xs h-10 px-space-md rounded-lg bg-surface-container-highest/20 hover:bg-surface-container-highest/30 text-on-primary font-body-md-medium text-body-md transition-colors" onclick="triggerToast('Opening detailed forensic audit trail...')">
+<span class="material-symbols-outlined text-[18px]">history</span>
+<span>Audit Trail</span>
+</button>
+<button class="inline-flex items-center gap-space-xs h-10 px-space-lg rounded-lg bg-primary-container hover:bg-primary text-on-primary font-body-md-medium text-body-md transition-all shadow-md active:scale-95" id="signoff-cta" onclick="affixSignOff()">
+<span class="material-symbols-outlined text-[18px]" id="stamp-icon">draw</span>
+<span id="stamp-text">Affix Underwriter Digital Stamp</span>
+</button>
+<a class="inline-flex items-center justify-center h-10 w-10 rounded-lg bg-surface-container-highest/15 hover:bg-surface-container-highest/25 text-on-primary transition-colors" href="#" onclick="triggerToast('Forwarding to CAM Review module with stamp...'); return false;" title="Continue to CAM Review">
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Interactive Floating Feedback Toast -->
+<div class="fixed bottom-24 right-8 z-50 transform translate-y-12 opacity-0 pointer-events-none transition-all duration-300 bg-inverse-surface text-inverse-on-surface px-space-md py-space-sm rounded-lg shadow-xl font-body-md text-body-md flex items-center gap-space-sm" id="toast-msg">
+<span class="material-symbols-outlined text-[20px] text-tertiary-fixed">info</span>
+<span id="toast-text">System notification</span>
+</div>
+<!-- Client-side Logic for Screen Interactions -->
+<script>
+    function triggerToast(message) {
+      const toast = document.getElementById('toast-msg');
+      const text = document.getElementById('toast-text');
+      text.innerText = message;
+      toast.classList.remove('translate-y-12', 'opacity-0', 'pointer-events-none');
+      setTimeout(() => {
+        toast.classList.add('translate-y-12', 'opacity-0', 'pointer-events-none');
+      }, 3500);
+    }
+
+    function showNodeDetail(name, role, volume, status) {
+      const inspector = document.getElementById('node-inspector');
+      const title = document.getElementById('insp-title');
+      const detail = document.getElementById('insp-detail');
+      const icon = document.getElementById('insp-icon');
+
+      title.innerText = 'Node: ' + name;
+      detail.innerText = 'Category: ' + role + ' · Volume: ' + volume + ' · Audit Status: ' + status;
+      
+      if (status.includes('Reconciled') || status.includes('Credit Note')) {
+        inspector.className = 'mt-space-sm p-space-sm bg-[#FFFBEB] rounded-lg flex flex-wrap items-center justify-between gap-space-sm transition-all';
+        icon.className = 'material-symbols-outlined text-[18px] text-amber-600';
+      } else {
+        inspector.className = 'mt-space-sm p-space-sm bg-surface-container-low rounded-lg flex flex-wrap items-center justify-between gap-space-sm transition-all';
+        icon.className = 'material-symbols-outlined text-[18px] text-primary';
+      }
+      
+      triggerToast('Inspected counterparty node: ' + name);
+    }
+
+    function resetGraphZoom() {
+      const inspector = document.getElementById('node-inspector');
+      const title = document.getElementById('insp-title');
+      const detail = document.getElementById('insp-detail');
+      title.innerText = 'Node Selected: Rajesh Textiles Pvt. Ltd. (Borrower Hub)';
+      detail.innerText = 'Type: Applicant Commercial Entity · Volume: ₹14.82 Cr Turnover · Status: FRAUD_CLEAR';
+      inspector.className = 'mt-space-sm p-space-sm bg-surface-container-low rounded-lg flex flex-wrap items-center justify-between gap-space-sm transition-all';
+      triggerToast('Graph recentered to Applicant Hub.');
+    }
+
+    function triggerCrawler() {
+      const icon = document.getElementById('crawler-icon');
+      icon.classList.add('animate-spin');
+      triggerToast('Re-running network crawler across 34 GSTN nodes & MCA-21 API...');
+      setTimeout(() => {
+        icon.classList.remove('animate-spin');
+        triggerToast('Network topology verified: Nil changes detected. Confidence 99.8%.');
+      }, 1800);
+    }
+
+    let isSigned = false;
+    function affixSignOff() {
+      const stampText = document.getElementById('stamp-text');
+      const stampIcon = document.getElementById('stamp-icon');
+      const signoffBtn = document.getElementById('signoff-cta');
+      
+      if (!isSigned) {
+        isSigned = true;
+        stampText.innerText = 'Stamped & Signed by Arun Sharma';
+        stampIcon.innerText = 'verified';
+        signoffBtn.className = 'inline-flex items-center gap-space-xs h-10 px-space-lg rounded-lg bg-tertiary text-on-tertiary font-body-md-medium text-body-md transition-all shadow-md';
+        triggerToast('Digital Stamp Affixed: Signed by Arun Sharma (Sr. Underwriter) at ' + new Date().toLocaleTimeString());
+      } else {
+        triggerToast('Digital signature already locked with SHA-256 seal.');
+      }
+    }
+  </script>
+</div></main></div></body></html>

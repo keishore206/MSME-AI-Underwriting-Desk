@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"tertiary":"#005439","surface-bright":"#f9f9ff","surface-container-lowest":"#ffffff","secondary":"#4e5e85","on-secondary-fixed-variant":"#37466c","on-primary":"#ffffff","primary-container":"#1a56db","on-tertiary-container":"#7ff2be","on-primary-container":"#d4dcff","inverse-on-surface":"#ebf1ff","surface-tint":"#1353d8","primary-fixed":"#dbe1ff","outline":"#737686","on-secondary-container":"#4a5980","inverse-primary":"#b5c4ff","surface-container-high":"#e2e8f8","on-tertiary-fixed":"#002114","surface-variant":"#dce2f3","secondary-fixed":"#dae2ff","error":"#ba1a1a","on-surface-variant":"#434654","primary":"#003fb1","error-container":"#ffdad6","on-surface":"#151c27","on-primary-fixed":"#00174d","surface-container-low":"#f0f3ff","surface-container":"#e7eefe","on-secondary-fixed":"#081a3e","tertiary-fixed-dim":"#68dba9","secondary-fixed-dim":"#b6c6f3","on-tertiary":"#ffffff","on-background":"#151c27","outline-variant":"#c3c5d7","surface-container-highest":"#dce2f3","secondary-container":"#c1d1ff","on-primary-fixed-variant":"#003dab","primary-fixed-dim":"#b5c4ff","inverse-surface":"#2a313d","tertiary-fixed":"#85f8c4","tertiary-container":"#006f4d","on-secondary":"#ffffff","surface":"#f9f9ff","on-error":"#ffffff","on-error-container":"#93000a","on-tertiary-fixed-variant":"#005137","background":"#f9f9ff","surface-dim":"#d3daea"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"space-md":"1rem","space-xl":"2rem","space-xs":"0.25rem","margin":"2rem","space-lg":"1.5rem","space-sm":"0.5rem","gutter":"1.5rem"},"fontFamily":{"body-lg":["Inter"],"body-md":["Inter"],"numeric-data":["Inter"],"body-md-medium":["Inter"],"headline-lg":["Inter"],"label-sm":["Inter"],"label-md":["Inter"],"headline-md":["Inter"],"headline-lg-mobile":["Inter"],"body-sm":["Inter"],"headline-sm":["Inter"]},"fontSize":{"body-lg":["16px",{"lineHeight":"24px","letterSpacing":"0em","fontWeight":"400"}],"body-md":["14px",{"lineHeight":"20px","letterSpacing":"0em","fontWeight":"400"}],"numeric-data":["14px",{"lineHeight":"20px","letterSpacing":"-0.01em","fontWeight":"600"}],"body-md-medium":["14px",{"lineHeight":"20px","letterSpacing":"0em","fontWeight":"500"}],"headline-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"700"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.04em","fontWeight":"600"}],"label-md":["13px",{"lineHeight":"16px","letterSpacing":"0.01em","fontWeight":"600"}],"headline-md":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-lg-mobile":["24px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"700"}],"body-sm":["12px",{"lineHeight":"16px","letterSpacing":"0.01em","fontWeight":"400"}],"headline-sm":["18px",{"lineHeight":"24px","letterSpacing":"-0.005em","fontWeight":"600"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-screen w-60 bg-[#0F2044] z-50 flex flex-col justify-between text-on-primary select-none"><div class="flex flex-col flex-1 min-h-0"><div class="h-16 px-space-md flex items-center gap-space-sm border-b border-outline/20"><img alt="CreditAI Bank Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XMDy3_NnW79KjK05MGgiXAJtBNOg8BEAcj4oMQFczNXMT7eYkiqBA1BqM43zDaQ3HEZUgRctX17q1G_BoOeeLUQAbNUHLDEynabT09koRaPbI9TdVKBCOiKMWKQhTgV5xAW_7xGFUCkVUDz5LGcoQxK1znGV8F_XxL37CbpZ9jlz2vvmA8mBk0QSe8JF4f9q1-ZDXeHAVq3TY2bwp1tM6C1RmB4m09ZBe_c53oW1S9MQ"/><div class="flex flex-col min-w-0"><span class="font-headline-sm text-headline-sm text-on-primary truncate tracking-tight">AI Underwriting</span><span class="font-label-sm text-label-sm text-outline-variant uppercase tracking-wider">Desk Cockpit</span></div></div><nav class="flex-1 px-space-sm py-space-md flex flex-col gap-space-xs overflow-y-auto" data-active-classes="bg-primary-container text-on-primary font-body-md-medium shadow-sm"><a class="flex items-center px-space-md py-space-sm rounded-xl text-outline-variant hover:bg-surface-variant/10 hover:text-on-primary transition-colors font-body-md text-body-md" data-path="msme-underwriting-cockpit-dashboard" href="#">Dashboard</a><a class="flex items-center px-space-md py-space-sm rounded-xl text-outline-variant hover:bg-surface-variant/10 hover:text-on-primary transition-colors font-body-md text-body-md" data-path="new-application" href="#">New Application</a><a class="flex items-center px-space-md py-space-sm rounded-xl text-outline-variant hover:bg-surface-variant/10 hover:text-on-primary transition-colors font-body-md text-body-md" data-path="all-cases" href="#">All Cases</a><a class="flex items-center px-space-md py-space-sm rounded-xl text-outline-variant hover:bg-surface-variant/10 hover:text-on-primary transition-colors font-body-md text-body-md" data-path="human-approval-rajesh-textiles-pvt-ltd-case-2024-00847" href="#">Human Approval</a><a class="flex items-center px-space-md py-space-sm rounded-xl text-outline-variant hover:bg-surface-variant/10 hover:text-on-primary transition-colors font-body-md text-body-md" data-path="reports" href="#">Reports</a><a class="flex items-center px-space-md py-space-sm rounded-xl text-outline-variant hover:bg-surface-variant/10 hover:text-on-primary transition-colors font-body-md text-body-md" data-path="settings" href="#">Settings</a></nav></div><div class="flex flex-col border-t border-outline/20"><div class="px-space-md py-space-sm bg-[#0A1630] flex items-center justify-between"><div class="flex items-center gap-space-sm"><span class="relative flex h-2.5 w-2.5"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-tertiary-fixed opacity-75"></span><span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-tertiary-fixed-dim"></span></span><span class="font-label-md text-label-md text-surface-container-high">3 agents running</span></div><span class="font-label-sm text-label-sm text-outline-variant">Active</span></div><div class="p-space-md flex items-center gap-space-sm bg-[#0F2044]"><div class="relative"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-primary-container" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEtNig0yiCmbzikf5aSuotHs58lnESubKkqhPxDO42p5s1-UnmFrveGWroe_v8i8l6Ox0XHHR4-KI25JX2vQ4JuDB7QZVPulLmW55m8okKCDS--mQ1LzDeqrUJ-huXr-kPJ3qJ4oSHWru4h6YhlEL3WK9g4L2K_1ogo0awaE8Un-psKxjR_fNtAOOlrI5mBx5RlHvx3qxWlP4gYsfEGKyL1FaaKiAhpYs5JE3tM571"/><span class="absolute bottom-0 right-0 w-2 h-2 bg-tertiary-fixed rounded-full ring-1 ring-[#0F2044]"></span></div><div class="flex flex-col min-w-0 flex-1"><span class="font-body-md-medium text-body-md-medium text-on-primary truncate">Arun Sharma</span><span class="font-label-sm text-label-sm text-outline-variant truncate">Senior Underwriter</span></div><span class="material-symbols-outlined text-outline-variant text-[18px]">unfold_more</span></div></div></aside><div class="pl-60"><header class="fixed top-0 left-60 right-0 h-16 bg-surface-container-lowest border-b border-outline-variant/30 z-40 flex items-center justify-between px-gutter shadow-[0px_1px_3px_rgba(15,32,68,0.05),0px_1px_2px_rgba(15,32,68,0.03)]"><div class="flex items-center gap-space-md min-w-0 flex-1"><nav aria-label="Breadcrumb" class="hidden sm:flex items-center gap-space-xs font-label-md text-label-md text-on-surface-variant shrink-0"><a class="hover:text-primary transition-colors text-on-surface-variant" data-path="msme-underwriting-cockpit-dashboard" href="#">Home</a><span class="material-symbols-outlined text-[16px] text-outline">chevron_right</span><span class="text-on-surface font-body-md-medium">Rajesh Textiles (CASE-2024-00847)</span></nav><div class="relative w-full max-w-md"><span class="material-symbols-outlined absolute left-space-sm top-1/2 -translate-y-1/2 text-outline text-[20px] pointer-events-none">search</span><input class="w-full h-9 pl-9 pr-space-md bg-surface-container-low text-on-surface placeholder:text-outline border border-outline-variant/40 rounded-lg font-body-sm text-body-sm focus:outline-none focus:border-primary-container focus:ring-1 focus:ring-primary-container transition-all" placeholder="Search cases, applicants, GSTIN..." type="search"/></div></div><div class="flex items-center gap-space-md shrink-0 ml-space-md"><a class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-[#FFFBEB] border border-[#FDE68A] text-[#92400E] font-label-sm text-label-sm shadow-sm hover:bg-[#FEF3C7] transition-colors shrink-0" data-path="human-approval-rajesh-textiles-pvt-ltd-case-2024-00847" href="#"><span class="relative flex h-2 w-2"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#D97706] opacity-75"></span><span class="relative inline-flex rounded-full h-2 w-2 bg-[#D97706]"></span></span><span class="font-body-md-medium">Pending Your Decision</span></a><button aria-label="Notifications" class="relative p-space-xs text-on-surface-variant hover:text-on-surface hover:bg-surface-container rounded-lg transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute -top-1 -right-1 flex h-4 min-w-[1rem] px-1 items-center justify-center rounded-full bg-error text-on-error font-label-sm text-[10px] font-bold ring-2 ring-surface-container-lowest">3</span></button><a class="inline-flex items-center justify-center gap-space-xs h-11 px-space-md bg-primary-container hover:bg-primary text-on-primary font-body-md-medium text-body-md-medium rounded-xl shadow-sm transition-colors shrink-0" data-path="new-application" href="#"><span class="material-symbols-outlined text-[18px]">add</span><span>New Application</span></a><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-outline-variant shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEtNig0yiCmbzikf5aSuotHs58lnESubKkqhPxDO42p5s1-UnmFrveGWroe_v8i8l6Ox0XHHR4-KI25JX2vQ4JuDB7QZVPulLmW55m8okKCDS--mQ1LzDeqrUJ-huXr-kPJ3qJ4oSHWru4h6YhlEL3WK9g4L2K_1ogo0awaE8Un-psKxjR_fNtAOOlrI5mBx5RlHvx3qxWlP4gYsfEGKyL1FaaKiAhpYs5JE3tM571"/></div></header><main class="relative pt-16 min-h-screen bg-background w-full px-gutter py-margin"><div class="flex flex-col w-full">
+<!-- Top Utility Context Bar -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm mb-space-md">
+<div class="flex items-center gap-space-xs font-label-md text-label-md text-on-surface-variant">
+<span class="hover:text-primary transition-colors cursor-pointer">Cases</span>
+<span class="material-symbols-outlined text-[16px] text-outline">chevron_right</span>
+<span class="hover:text-primary transition-colors cursor-pointer">CASE-2024-00847</span>
+<span class="material-symbols-outlined text-[16px] text-outline">chevron_right</span>
+<span class="text-primary font-body-md-medium">Human Approval</span>
+</div>
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container-high text-on-surface shadow-sm">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-error opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-error"></span>
+</span>
+<span class="font-label-sm text-label-sm text-on-surface uppercase tracking-wider">Mandatory Underwriter Intervention</span>
+</div>
+</div>
+<!-- Decision Hero Banner -->
+<section class="relative overflow-hidden rounded-xl bg-surface-container-low p-space-lg mb-space-lg shadow-sm">
+<div class="absolute -right-16 -top-16 w-72 h-72 rounded-full bg-primary/5 pointer-events-none blur-2xl"></div>
+<div class="relative z-10 flex flex-col xl:flex-row xl:items-center justify-between gap-space-lg">
+<div class="flex flex-col gap-space-xs max-w-2xl">
+<div class="flex items-center gap-space-sm">
+<div class="flex items-center justify-center w-10 h-10 rounded-lg bg-primary-container text-on-primary shadow-sm">
+<span class="material-symbols-outlined text-[24px]">verified_user</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Human Approval Required</h1>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant pl-12">
+          Autonomous agents have completed synthesis across banking, GST, fraud heuristics, and collateral valuation. Final sanction authority rests exclusively with the designated risk officer.
+        </p>
+</div>
+<div class="flex flex-col sm:flex-row xl:flex-col items-start xl:items-end gap-space-sm shrink-0">
+<div class="inline-flex items-center gap-2 px-space-md py-1.5 rounded-lg bg-surface-container-lowest shadow-sm">
+<span class="font-label-md text-label-md text-outline">CASE-2024-00847</span>
+<span class="w-1 h-1 rounded-full bg-outline"></span>
+<span class="font-body-md-medium text-body-md-medium text-on-surface font-semibold">Rajesh Textiles Pvt. Ltd.</span>
+<span class="w-1 h-1 rounded-full bg-outline"></span>
+<span class="font-numeric-data text-numeric-data text-primary">₹45,00,000</span>
+</div>
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-md bg-error-container text-on-error-container font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">lock</span>
+<span>Auto-disbursal is BLOCKED until human underwriter sign-off</span>
+</div>
+</div>
+</div>
+</section>
+<!-- AI Recommendation Summary Card -->
+<section class="rounded-xl bg-surface-container-lowest p-space-lg mb-space-lg shadow-sm">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md pb-space-md">
+<div class="flex items-center gap-space-md">
+<div class="flex items-center justify-center w-12 h-12 rounded-xl bg-tertiary-container text-on-tertiary-container">
+<span class="material-symbols-outlined text-[28px]" style="font-variation-settings: 'FILL' 1;">smart_toy</span>
+</div>
+<div>
+<div class="flex items-center gap-space-sm">
+<span class="font-headline-md text-headline-md text-tertiary font-bold tracking-tight">AI RECOMMENDATION: APPROVE</span>
+<span class="px-2 py-0.5 rounded-full bg-tertiary text-on-tertiary font-label-sm text-label-sm">Unanimous</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+            Analysis completed today at 14:25:03 IST by 7 Autonomous Underwriting Agents
+          </p>
+</div>
+</div>
+<div class="flex items-center gap-space-xs self-start lg:self-center">
+<span class="material-symbols-outlined text-[18px] text-tertiary">check_circle</span>
+<span class="font-label-md text-label-md text-tertiary font-semibold">Zero Deviations Detected</span>
+</div>
+</div>
+<!-- Metrics Bento Strip -->
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-space-sm pt-space-md">
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Confidence Level</span>
+<div class="flex items-baseline gap-1.5 mt-space-xs">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">99.2%</span>
+<span class="font-label-sm text-label-sm text-tertiary">High</span>
+</div>
+<div class="w-full bg-surface-variant h-1.5 rounded-full mt-2 overflow-hidden">
+<div class="bg-tertiary h-full rounded-full" style="width: 99.2%"></div>
+</div>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Composite Risk</span>
+<div class="flex items-baseline gap-1.5 mt-space-xs">
+<span class="font-headline-sm text-headline-sm text-tertiary font-bold">Grade A-</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Low Risk</span>
+</div>
+<span class="font-body-sm text-body-sm text-outline mt-2">Ranked top 4% MSME Cohort</span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Fraud Detection</span>
+<div class="flex items-baseline gap-1.5 mt-space-xs">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">14 / 100</span>
+<span class="font-label-sm text-label-sm text-tertiary font-medium">Clean</span>
+</div>
+<span class="font-body-sm text-body-sm text-outline mt-2">0 Shell Counterparties</span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Bank Policy Audit</span>
+<div class="flex items-baseline gap-1.5 mt-space-xs">
+<span class="font-headline-sm text-headline-sm text-tertiary font-bold">8 / 8</span>
+<span class="font-label-sm text-label-sm text-tertiary font-medium">Pass</span>
+</div>
+<span class="font-body-sm text-body-sm text-outline mt-2">PSL Manufacturing Qualified</span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col justify-between col-span-2 md:col-span-3 lg:col-span-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Core Coverage Ratio</span>
+<div class="flex items-baseline gap-1.5 mt-space-xs">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">1.87x</span>
+<span class="font-label-sm text-label-sm text-tertiary font-medium">DSCR</span>
+</div>
+<span class="font-body-sm text-body-sm text-outline mt-2">LTV: 68.0% | Min Cushion +49.6%</span>
+</div>
+</div>
+</section>
+<!-- Decision Execution Zone -->
+<section class="rounded-xl bg-surface-container-lowest p-space-lg mb-space-lg shadow-sm">
+<div class="flex flex-col gap-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-xs">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Executive Decision Terminal</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Select an action to conclude credit evaluation and broadcast authorization token.</p>
+</div>
+<div class="flex items-center gap-1.5 text-outline text-label-sm font-label-sm">
+<span class="material-symbols-outlined text-[16px]">vpn_key</span>
+<span>Cryptographic Officer Signature Required</span>
+</div>
+</div>
+<!-- Action Buttons Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md pt-space-xs">
+<!-- Approve Button -->
+<button class="group relative flex items-center justify-center gap-space-sm h-14 px-space-lg rounded-xl bg-tertiary hover:bg-tertiary-container text-on-tertiary shadow-md transition-all active:scale-[0.99] cursor-pointer" id="btn-approve" type="button">
+<span class="material-symbols-outlined text-[24px] group-hover:scale-110 transition-transform">check_circle</span>
+<span class="font-headline-sm text-headline-sm font-bold tracking-tight">APPROVE SANCTION</span>
+</button>
+<!-- Request Info Button -->
+<button class="group relative flex items-center justify-center gap-space-sm h-14 px-space-lg rounded-xl bg-surface-container-high hover:bg-surface-container-highest text-on-surface transition-all active:scale-[0.99] cursor-pointer" id="btn-info" type="button">
+<span class="material-symbols-outlined text-[22px] text-outline group-hover:rotate-45 transition-transform">help_outline</span>
+<span class="font-body-md-medium text-body-md-medium font-bold">REQUEST MORE INFO</span>
+</button>
+<!-- Reject Button -->
+<button class="group relative flex items-center justify-center gap-space-sm h-14 px-space-lg rounded-xl bg-error-container hover:bg-error/20 text-on-error-container transition-all active:scale-[0.99] cursor-pointer" id="btn-reject" type="button">
+<span class="material-symbols-outlined text-[22px] group-hover:shake transition-transform">cancel</span>
+<span class="font-body-md-medium text-body-md-medium font-bold">REJECT SANCTION</span>
+</button>
+</div>
+<!-- Rationale Textarea -->
+<div class="flex flex-col gap-space-xs pt-space-sm">
+<label class="font-label-md text-label-md text-on-surface flex items-center justify-between" for="underwriter-notes">
+<span>Underwriter Sanction Rationale &amp; Operational Notes</span>
+<span class="font-label-sm text-label-sm text-outline">Optional for approval, mandatory for rejection</span>
+</label>
+<textarea class="w-full p-space-sm rounded-lg bg-surface-container-low text-on-surface placeholder:text-outline font-body-md text-body-md focus:outline-none focus:bg-surface-container transition-all" id="underwriter-notes" placeholder="Enter specific covenants, borrower discussion notes, or conditions modifier before committing..." rows="2"></textarea>
+</div>
+<!-- Underwriter ID Ledger Bind Sub-caption -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm pt-space-xs text-on-surface-variant font-body-sm text-body-sm">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-outline">gavel</span>
+<span>Logged &amp; cryptographically timestamped to <strong>Arun Sharma</strong> (Senior Underwriter, ID: #UW-84920)</span>
+</div>
+<div class="flex items-center gap-space-md">
+<a class="text-primary hover:underline font-body-md-medium flex items-center gap-1" href="#">
+<span class="material-symbols-outlined text-[16px]">description</span>
+<span>View Full CAM</span>
+</a>
+<a class="text-primary hover:underline font-body-md-medium flex items-center gap-1" href="#">
+<span class="material-symbols-outlined text-[16px]">download</span>
+<span>Download Executive PDF</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Core-Banking System (CBS) Ledger Integration Status -->
+<section class="rounded-xl bg-surface-container-lowest p-space-lg mb-space-lg shadow-sm">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm pb-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[24px] text-primary">account_balance</span>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Core-Banking System (CBS) Ledger Integration</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Direct Finacle staging node for transactional credit line injection</p>
+</div>
+</div>
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm shadow-sm">
+<span class="h-2 w-2 rounded-full bg-tertiary"></span>
+<span class="font-body-md-medium">Finacle CBS Mock Bridge: CONNECTED</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md p-space-md rounded-xl bg-surface-container-low">
+<div class="flex flex-col gap-0.5">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Ledger Reference ID</span>
+<span class="font-numeric-data text-numeric-data text-on-surface">LDG-2024-00847-SANCT</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1">Class: Secured MSME Facility</span>
+</div>
+<div class="flex flex-col gap-0.5">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Ledger State</span>
+<div class="flex items-center gap-2">
+<span class="h-2 w-2 rounded-full bg-secondary"></span>
+<span class="font-body-md-medium text-body-md-medium text-on-surface font-bold">PENDING HUMAN APPROVAL</span>
+</div>
+<span class="font-body-sm text-body-sm text-outline mt-1">Last sync: Today, 14:25:10 IST</span>
+</div>
+<div class="flex flex-col gap-0.5">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Allocated Limit (Reserved)</span>
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">₹45,00,000</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-highest text-on-surface-variant font-label-sm text-[10px]">LOCKED</span>
+</div>
+<span class="font-body-sm text-body-sm text-outline mt-1">Sub-limit: TL ₹30L | CC ₹15L</span>
+</div>
+<div class="flex flex-col gap-0.5">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Disbursal Gateway</span>
+<div class="flex items-center gap-1.5 text-error font-body-md-medium">
+<span class="material-symbols-outlined text-[18px]">gpp_bad</span>
+<span>HOLD — GATE 01 CLOSED</span>
+</div>
+<span class="font-body-sm text-body-sm text-outline mt-1">Awaiting digital key token</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-sm italic">
+      Notice: This credit ledger entry has been pre-validated and staged in memory. It will be activated immediately upon your cryptographic digital approval and cannot be disbursed automatically under any circumstances.
+    </p>
+</section>
+<!-- Two-Column Review Layout -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg mb-space-lg">
+<!-- Left Column (60% / 7 cols): Key Facts for Review -->
+<div class="lg:col-span-7 flex flex-col gap-space-lg">
+<div class="rounded-xl bg-surface-container-lowest p-space-lg shadow-sm">
+<div class="flex items-center justify-between pb-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[22px]">fact_check</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Institutional Scrutiny &amp; Key Facts</h3>
+</div>
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Audited Dossier</span>
+</div>
+<div class="flex flex-col">
+<!-- Row 1 -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between py-2.5 px-space-sm rounded-lg hover:bg-surface-container-low transition-colors">
+<span class="font-body-sm text-body-sm text-outline sm:w-1/3">Applicant Entity</span>
+<div class="sm:w-2/3 flex flex-col">
+<span class="font-body-md-medium text-body-md-medium text-on-surface">Rajesh Textiles Pvt. Ltd.</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">CIN: U17110MH2012PTC229871 • Bhiwandi, Maharashtra</span>
+</div>
+</div>
+<!-- Row 2 -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between py-2.5 px-space-sm rounded-lg bg-surface-container-low/50 hover:bg-surface-container-low transition-colors">
+<span class="font-body-sm text-body-sm text-outline sm:w-1/3">Proposed Facility</span>
+<div class="sm:w-2/3 flex flex-col">
+<span class="font-numeric-data text-numeric-data text-on-surface">₹45,00,000 Total Composite Limit</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Term Loan ₹30,00,000 (84M) + Cash Credit ₹15,00,000 (Annual Renewal)</span>
+</div>
+</div>
+<!-- Row 3 -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between py-2.5 px-space-sm rounded-lg hover:bg-surface-container-low transition-colors">
+<span class="font-body-sm text-body-sm text-outline sm:w-1/3">Facility Purpose</span>
+<div class="sm:w-2/3">
+<span class="font-body-md text-body-md text-on-surface">Rapier Loom Machinery Procurement (4 units) + Cotton Yarn Working Capital</span>
+</div>
+</div>
+<!-- Row 4 -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between py-2.5 px-space-sm rounded-lg bg-surface-container-low/50 hover:bg-surface-container-low transition-colors">
+<span class="font-body-sm text-body-sm text-outline sm:w-1/3">Debt Service Coverage (DSCR)</span>
+<div class="sm:w-2/3 flex items-center justify-between">
+<span class="font-numeric-data text-numeric-data text-tertiary">1.87x Coverage</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Benchmark ≥ 1.25x (+49.6% Cushion)</span>
+</div>
+</div>
+<!-- Row 5 -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between py-2.5 px-space-sm rounded-lg hover:bg-surface-container-low transition-colors">
+<span class="font-body-sm text-body-sm text-outline sm:w-1/3">Bank Turnover &amp; Discipline</span>
+<div class="sm:w-2/3 flex flex-col">
+<span class="font-body-md-medium text-body-md-medium text-on-surface">1.64x DBSR Ratio • ₹12.50L/month Avg Inflow</span>
+<span class="font-body-sm text-body-sm text-tertiary">0 Cheque Bounces / 0 ECS Failures over 24 Months</span>
+</div>
+</div>
+<!-- Row 6 -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between py-2.5 px-space-sm rounded-lg bg-surface-container-low/50 hover:bg-surface-container-low transition-colors">
+<span class="font-body-sm text-body-sm text-outline sm:w-1/3">Bureau &amp; CMR Rank</span>
+<div class="sm:w-2/3 flex items-center gap-space-md">
+<div>
+<span class="font-numeric-data text-numeric-data text-on-surface">Entity: 748</span>
+<span class="font-label-sm text-label-sm text-outline ml-1">(CMR-3)</span>
+</div>
+<div>
+<span class="font-numeric-data text-numeric-data text-on-surface">Promoter: 762</span>
+<span class="font-label-sm text-label-sm text-tertiary ml-1">(Spotless Track)</span>
+</div>
+</div>
+</div>
+<!-- Row 7 -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between py-2.5 px-space-sm rounded-lg hover:bg-surface-container-low transition-colors">
+<span class="font-body-sm text-body-sm text-outline sm:w-1/3">Fraud &amp; GST Cross-Audit</span>
+<div class="sm:w-2/3 flex flex-col">
+<span class="font-body-md-medium text-body-md-medium text-on-surface">Score 14/100 (Negligible Risk)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">34 Counterparties cross-verified on E-Way • 0 Circular shell matches</span>
+</div>
+</div>
+<!-- Row 8 -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between py-2.5 px-space-sm rounded-lg bg-surface-container-low/50 hover:bg-surface-container-low transition-colors">
+<span class="font-body-sm text-body-sm text-outline sm:w-1/3">Collateral &amp; Security</span>
+<div class="sm:w-2/3 flex flex-col">
+<span class="font-body-md-medium text-body-md-medium text-on-surface">First Exclusive Charge on Looms &amp; Raw Stock</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Equitable mortgage on Plot 42 Industrial Unit (Val: ₹64.0L, LTV 68.0%) + Unconditional PG</span>
+</div>
+</div>
+<!-- Row 9 -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between py-2.5 px-space-sm rounded-lg hover:bg-surface-container-low transition-colors">
+<span class="font-body-sm text-body-sm text-outline sm:w-1/3">Autonomous Synthesis</span>
+<div class="sm:w-2/3 flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-tertiary">check_circle</span>
+<span class="font-body-md-medium text-body-md-medium text-tertiary">UNANIMOUS APPROVAL (7 of 7 Agents)</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column (40% / 5 cols): Conditions Precedent -->
+<div class="lg:col-span-5 flex flex-col gap-space-lg">
+<div class="rounded-xl bg-surface-container-lowest p-space-lg shadow-sm flex flex-col justify-between h-full">
+<div>
+<div class="flex items-center justify-between pb-space-xs">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Mandatory Pre-Disbursement Directives</h3>
+<span class="material-symbols-outlined text-outline text-[20px]">assignment_turned_in</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+            All conditions must be verified and cleared prior to core banking ledger activation.
+          </p>
+<div class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container-low mb-space-md">
+<span class="font-label-sm text-label-sm text-on-surface uppercase tracking-wider font-semibold">Verification Progress</span>
+<span class="font-label-sm text-label-sm text-primary font-bold" id="condition-count">0 of 6 Conditions Cleared</span>
+</div>
+<!-- Interactive Condition Checkboxes -->
+<div class="flex flex-col gap-space-sm">
+<label class="flex items-start gap-space-sm p-space-sm rounded-lg hover:bg-surface-container-low cursor-pointer transition-colors">
+<input class="condition-checkbox mt-1 h-4 w-4 rounded text-primary focus:ring-0 cursor-pointer accent-primary" type="checkbox"/>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md text-on-surface">Execution of formal tripartite loan agreement</span>
+<span class="font-body-sm text-body-sm text-outline">Counter-signed with board resolution and power of attorney</span>
+</div>
+</label>
+<label class="flex items-start gap-space-sm p-space-sm rounded-lg hover:bg-surface-container-low cursor-pointer transition-colors">
+<input class="condition-checkbox mt-1 h-4 w-4 rounded text-primary focus:ring-0 cursor-pointer accent-primary" type="checkbox"/>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md text-on-surface">Hypothecation deed registration</span>
+<span class="font-body-sm text-body-sm text-outline">Over plant machinery, rapier looms, and cotton yarn inventory</span>
+</div>
+</label>
+<label class="flex items-start gap-space-sm p-space-sm rounded-lg hover:bg-surface-container-low cursor-pointer transition-colors">
+<input class="condition-checkbox mt-1 h-4 w-4 rounded text-primary focus:ring-0 cursor-pointer accent-primary" type="checkbox"/>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md text-on-surface">Unconditional Personal Guarantee</span>
+<span class="font-body-sm text-body-sm text-outline">Executed irrevocably by Mr. Rajesh Kumar Sharma</span>
+</div>
+</label>
+<label class="flex items-start gap-space-sm p-space-sm rounded-lg hover:bg-surface-container-low cursor-pointer transition-colors">
+<input class="condition-checkbox mt-1 h-4 w-4 rounded text-primary focus:ring-0 cursor-pointer accent-primary" type="checkbox"/>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md text-on-surface">Pre-disbursement site inspection</span>
+<span class="font-body-sm text-body-sm text-outline">Technical verification sign-off by Branch Technical Officer</span>
+</div>
+</label>
+<label class="flex items-start gap-space-sm p-space-sm rounded-lg hover:bg-surface-container-low cursor-pointer transition-colors">
+<input class="condition-checkbox mt-1 h-4 w-4 rounded text-primary focus:ring-0 cursor-pointer accent-primary" type="checkbox"/>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md text-on-surface">CERSAI &amp; MCA-21 Charge Filing</span>
+<span class="font-body-sm text-body-sm text-outline">Form CHG-1 submission within 30 days of initial drawdown</span>
+</div>
+</label>
+<label class="flex items-start gap-space-sm p-space-sm rounded-lg hover:bg-surface-container-low cursor-pointer transition-colors">
+<input class="condition-checkbox mt-1 h-4 w-4 rounded text-primary focus:ring-0 cursor-pointer accent-primary" type="checkbox"/>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md text-on-surface">Post-sanction covenants schedule</span>
+<span class="font-body-sm text-body-sm text-outline">Quarterly stock audits and half-yearly audited DSCR certificate</span>
+</div>
+</label>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between text-outline font-label-sm text-label-sm">
+<span>Sign-off Authority: #UW-84920</span>
+<span class="material-symbols-outlined text-[16px]">verified</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Audit Trail Footer Block -->
+<footer class="rounded-xl bg-inverse-surface text-inverse-on-surface p-space-lg shadow-md mb-space-md">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md pb-space-md">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px] text-tertiary-fixed">fingerprint</span>
+<span class="font-label-sm text-label-sm text-outline-variant uppercase tracking-wider">Cryptographic Audit Trail</span>
+</div>
+<p class="font-body-md-medium text-body-md-medium text-inverse-on-surface">Approval decision will be officially recorded as:</p>
+</div>
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded bg-surface-container-highest/20 font-label-sm text-label-sm text-tertiary-fixed font-mono">
+<span>SESSION-ACTIVE: 0x8C34F1...SECURE</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md pt-space-xs text-body-sm text-body-sm">
+<div class="flex flex-col">
+<span class="text-outline-variant font-label-sm text-label-sm uppercase">Officer ID</span>
+<span class="font-body-md-medium text-inverse-on-surface mt-0.5">Arun Sharma (#UW-84920)</span>
+<span class="text-outline-variant text-[11px]">Senior Underwriter, MSME Lending Div</span>
+</div>
+<div class="flex flex-col">
+<span class="text-outline-variant font-label-sm text-label-sm uppercase">Branch &amp; Cost Center</span>
+<span class="font-body-md-medium text-inverse-on-surface mt-0.5">Head Office Mumbai (0192)</span>
+<span class="text-outline-variant text-[11px]">Commercial Risk Directorate</span>
+</div>
+<div class="flex flex-col">
+<span class="text-outline-variant font-label-sm text-label-sm uppercase">Public Key / Seal Digest</span>
+<span class="font-mono text-outline-variant truncate mt-0.5" title="SHA-256: 8c34f19b2a7590d0ef061fbb904b77c5e421">SHA-256: 8c34f19b2a7590d0...</span>
+<span class="text-tertiary-fixed text-[11px]">HMAC Hardware Token Verified</span>
+</div>
+<div class="flex flex-col">
+<span class="text-outline-variant font-label-sm text-label-sm uppercase">Decision Timestamp</span>
+<span class="font-numeric-data text-inverse-on-surface mt-0.5" id="audit-timestamp">Auto-generated on signature</span>
+<span class="text-outline-variant text-[11px]">Indian Standard Time (IST)</span>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm flex items-start gap-2 text-outline-variant font-body-sm text-[12px]">
+<span class="material-symbols-outlined text-[16px] text-error shrink-0 mt-0.5">warning</span>
+<span>
+        NOTICE: This sanction sign-off is permanent, legally binding under the Indian Information Technology Act (2000) &amp; Reserve Bank of India MSME Lending Directives, and subject to statutory audit scrutiny. Misrepresentation carries regulatory liability.
+      </span>
+</div>
+</footer>
+</div>
+<script>
+  (function () {
+    const checkboxes = document.querySelectorAll('.condition-checkbox');
+    const countDisplay = document.getElementById('condition-count');
+    const btnApprove = document.getElementById('btn-approve');
+    const btnReject = document.getElementById('btn-reject');
+    const btnInfo = document.getElementById('btn-info');
+    const timestampDisplay = document.getElementById('audit-timestamp');
+    const notesInput = document.getElementById('underwriter-notes');
+
+    function updateCount() {
+      const checkedCount = document.querySelectorAll('.condition-checkbox:checked').length;
+      if (countDisplay) {
+        countDisplay.textContent = checkedCount + ' of ' + checkboxes.length + ' Conditions Cleared';
+      }
+    }
+
+    checkboxes.forEach(function (cb) {
+      cb.addEventListener('change', updateCount);
+    });
+
+    if (btnApprove) {
+      btnApprove.addEventListener('click', function () {
+        const now = new Date();
+        const timeStr = now.toLocaleDateString('en-GB') + ' ' + now.toLocaleTimeString('en-IN') + ' IST';
+        if (timestampDisplay) {
+          timestampDisplay.textContent = timeStr;
+          timestampDisplay.classList.add('text-tertiary-fixed');
+        }
+        btnApprove.innerHTML = '<span class="material-symbols-outlined text-[24px]">verified</span><span class="font-headline-sm text-headline-sm font-bold tracking-tight">SANCTION COMMITTED</span>';
+        btnApprove.classList.remove('bg-tertiary', 'hover:bg-tertiary-container');
+        btnApprove.classList.add('bg-tertiary-container', 'opacity-90', 'pointer-events-none');
+        alert('Sanction Approved for Rajesh Textiles Pvt. Ltd. (₹45,00,000). Ledger token broadcasted to Core-Banking System.');
+      });
+    }
+
+    if (btnReject) {
+      btnReject.addEventListener('click', function () {
+        const notes = notesInput ? notesInput.value.trim() : '';
+        if (!notes) {
+          alert('Mandatory Requirement: Please provide remarks / rationale in the Underwriter Notes textarea before rejecting.');
+          if (notesInput) notesInput.focus();
+          return;
+        }
+        if (confirm('Are you sure you want to REJECT this credit sanction? This will close CASE-2024-00847.')) {
+          alert('Application CASE-2024-00847 marked as REJECTED with logged rationale.');
+        }
+      });
+    }
+
+    if (btnInfo) {
+      btnInfo.addEventListener('click', function () {
+        const query = prompt('Enter specific queries or additional document requests for the Credit Operations desk:');
+        if (query) {
+          alert('Information request broadcasted to Branch Relationship Manager.');
+        }
+      });
+    }
+  })();
+</script></main></div></body></html>
