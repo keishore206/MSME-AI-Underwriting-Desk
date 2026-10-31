@@ -5,9 +5,18 @@ Exposes REST endpoints + WebSocket for real-time pipeline events.
 from __future__ import annotations
 import asyncio
 import json
+import os
+import sys
 from datetime import datetime
 
-from fastapi import FastAPI, HTTPException, WebSocket, WebSocketDisconnect
+# Ensure both backend/ and project root are in sys.path for Vercel and local runners
+CURRENT_DIR = os.path.dirname(os.path.abspath(__file__))
+PARENT_DIR = os.path.dirname(CURRENT_DIR)
+for p in [CURRENT_DIR, PARENT_DIR]:
+    if p and p not in sys.path:
+        sys.path.insert(0, p)
+
+from fastapi import FastAPI, APIRouter, HTTPException, WebSocket, WebSocketDisconnect
 from fastapi.middleware.cors import CORSMiddleware
 
 from backend.models.schemas import (
@@ -25,6 +34,8 @@ app = FastAPI(
     description="Multi-agent AI underwriting system — demo backend",
     version="1.0.0",
 )
+
+router = APIRouter()
 
 app.add_middleware(
     CORSMiddleware,
@@ -47,7 +58,7 @@ async def startup():
 # ---------------------------------------------------------------------------
 # Health
 # ---------------------------------------------------------------------------
-@app.get("/health")
+@router.get("/health")
 async def health():
     return {"status": "ok", "timestamp": datetime.utcnow().isoformat(), "service": "MSME Underwriting AI"}
 
@@ -55,7 +66,7 @@ async def health():
 # ---------------------------------------------------------------------------
 # Cases
 # ---------------------------------------------------------------------------
-@app.get("/cases")
+@router.get("/cases")
 async def get_all_cases():
     """List all cases."""
     cases = list_cases()
@@ -72,7 +83,7 @@ async def get_all_cases():
     ]
 
 
-@app.post("/cases")
+@router.post("/cases")
 async def create_new_case(req: NewCaseRequest):
     """Create a new underwriting case."""
     case_id = f"CASE-{datetime.utcnow().strftime('%Y%m%d%H%M%S')}"
@@ -80,7 +91,7 @@ async def create_new_case(req: NewCaseRequest):
     return {"case_id": case.case_id, "status": case.status}
 
 
-@app.get("/cases/{case_id}", response_model=PipelineStatusResponse)
+@router.get("/cases/{case_id}", response_model=PipelineStatusResponse)
 async def get_case_detail(case_id: str):
     """Get full case status including all agent outputs."""
     case = get_case(case_id)
@@ -106,7 +117,7 @@ async def get_case_detail(case_id: str):
     )
 
 
-@app.post("/cases/{case_id}/run-pipeline")
+@router.post("/cases/{case_id}/run-pipeline")
 async def run_case_pipeline(case_id: str):
     """
     Trigger the full underwriting pipeline for a case.
@@ -147,7 +158,7 @@ async def run_case_pipeline(case_id: str):
     }
 
 
-@app.get("/cases/{case_id}/cam")
+@router.get("/cases/{case_id}/cam")
 async def get_cam(case_id: str):
     """Get the raw CAM text for a case."""
     case = get_case(case_id)
@@ -158,7 +169,7 @@ async def get_cam(case_id: str):
     return {"case_id": case_id, "cam_text": case.cam_text, "cam_signal": case.cam_signal}
 
 
-@app.get("/cases/{case_id}/log")
+@router.get("/cases/{case_id}/log")
 async def get_agent_log(case_id: str):
     """Get agent execution log for a case."""
     case = get_case(case_id)
@@ -170,7 +181,7 @@ async def get_agent_log(case_id: str):
 # ---------------------------------------------------------------------------
 # Human Approval Gate
 # ---------------------------------------------------------------------------
-@app.post("/cases/{case_id}/approve")
+@router.post("/cases/{case_id}/approve")
 async def approve_case_route(case_id: str, req: ApprovalRequest):
     """
     Human officer approval gate.
@@ -211,10 +222,15 @@ async def approve_case_route(case_id: str, req: ApprovalRequest):
 # ---------------------------------------------------------------------------
 # Ledger
 # ---------------------------------------------------------------------------
-@app.get("/ledger")
+@router.get("/ledger")
 async def get_ledger():
     """View all mock ledger entries."""
     return list_sanctions()
+
+
+# Mount both with and without prefix
+app.include_router(router)
+app.include_router(router, prefix="/api")
 
 
 # ---------------------------------------------------------------------------

@@ -12,6 +12,13 @@ const initialA2AMessages = [
   { time: '09:01:06', agent: 'MockLedgerPost', type: 'LEDGER_POSTED', detail: 'LDG-2024-00847 – PENDING_HUMAN_APPROVAL' },
 ];
 
+const getApiBase = () => {
+  if (typeof window !== 'undefined' && window.location.hostname !== 'localhost') {
+    return '/api';
+  }
+  return 'http://localhost:8000';
+};
+
 const useStore = create((set, get) => ({
   currentPage: 'dashboard',
   caseData: { applicantData, bankStatementSummary },
@@ -33,7 +40,7 @@ const useStore = create((set, get) => ({
     }));
 
     try {
-      const res = await fetch('http://localhost:8000/cases/CASE-2024-00847/run-pipeline', {
+      const res = await fetch(`${getApiBase()}/cases/CASE-2024-00847/run-pipeline`, {
         method: 'POST',
       });
       if (res.ok) {
@@ -74,7 +81,7 @@ const useStore = create((set, get) => ({
     });
 
     try {
-      await fetch('http://localhost:8000/cases/CASE-2024-00847/approve', {
+      await fetch(`${getApiBase()}/cases/CASE-2024-00847/approve`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -102,7 +109,7 @@ const useStore = create((set, get) => ({
     });
 
     try {
-      await fetch('http://localhost:8000/cases/CASE-2024-00847/approve', {
+      await fetch(`${getApiBase()}/cases/CASE-2024-00847/approve`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({

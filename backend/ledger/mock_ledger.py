@@ -9,7 +9,10 @@ import os
 from datetime import datetime
 from typing import Optional
 
-DB_PATH = os.path.join(os.path.dirname(__file__), "ledger.db")
+DB_PATH = os.environ.get("LEDGER_DB_PATH") or (
+    os.path.join("/tmp", "ledger.db") if os.path.isdir("/tmp") and os.access("/tmp", os.W_OK)
+    else os.path.join(os.path.dirname(__file__), "ledger.db")
+)
 
 
 def init_ledger() -> None:
