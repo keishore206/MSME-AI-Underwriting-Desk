@@ -1,7 +1,7 @@
 import React from 'react';
 import {
   Building2, LayoutDashboard, FileText, Activity, Search,
-  Shield, ClipboardList, BookOpen, UserCheck, Wallet
+  Shield, ClipboardList, BookOpen, UserCheck, Wallet, MonitorPlay
 } from 'lucide-react';
 import useStore from '../../store/useStore';
 
@@ -10,6 +10,7 @@ const navGroups = [
     label: 'Main',
     items: [
       { icon: LayoutDashboard, label: 'Dashboard', page: 'dashboard' },
+      { icon: MonitorPlay, label: '🎬 Video Walkthrough', page: 'video-walkthrough' },
     ],
   },
   {

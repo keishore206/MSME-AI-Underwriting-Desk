@@ -8,12 +8,14 @@ import CreditRisk from './components/pages/CreditRisk';
 import PolicyCompliance from './components/pages/PolicyCompliance';
 import CAMViewer from './components/pages/CAMViewer';
 import HumanApproval from './components/pages/HumanApproval';
+import VideoWalkthrough from './components/pages/VideoWalkthrough';
 
 export default function App() {
   const currentPage = useStore((s) => s.currentPage);
 
   const pages = {
     dashboard: <Dashboard />,
+    'video-walkthrough': <VideoWalkthrough />,
     'case-detail': <CaseDetail />,
     'cash-flow': <CashFlow />,
     'fraud-investigation': <FraudInvestigation />,
