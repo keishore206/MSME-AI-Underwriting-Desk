@@ -51,6 +51,15 @@ wheels/
 *.sln
 *.sw?
 
+# Video Walkthrough & Presentation Assets (Local Only)
+public/screens/
+public/walkthrough.html
+src/components/pages/VideoWalkthrough.jsx
+
+# Local Mockup Demos & Raw Stitch Exports (Local Only)
+msme-demo/
+stitch_msme_loan_underwriting_dashboard/
+
 # Logs
 logs/
 *.log

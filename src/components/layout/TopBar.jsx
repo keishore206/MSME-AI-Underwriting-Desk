@@ -4,7 +4,6 @@ import useStore from '../../store/useStore';
 
 const pageLabels = {
   dashboard: 'Dashboard',
-  'video-walkthrough': 'Product Tour & Video Walkthrough',
   'new-application': 'New Application',
   'all-cases': 'All Cases',
   reports: 'Reports',
